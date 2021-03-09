@@ -11,13 +11,13 @@
     <RootNamespace>Inventory_Shaili</RootNamespace>
     <AssemblyName>Inventory Shaili</AssemblyName>
     <MyType>WindowsFormsWithCustomSubMain</MyType>
-    <ApplicationIcon>CDROM01.ICO</ApplicationIcon>
+    <ApplicationIcon>Inventory_Icon_48.ico</ApplicationIcon>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <SccProjectName>
     </SccProjectName>
@@ -888,6 +888,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CDROM01.ICO" />
+    <Content Include="Inventory_Icon_48.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

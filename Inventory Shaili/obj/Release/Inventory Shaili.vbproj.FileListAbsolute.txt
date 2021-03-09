@@ -1,0 +1,131 @@
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Inventory Shaili.exe.config
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Inventory Shaili.exe
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Inventory Shaili.pdb
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Inventory Shaili.xml
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\EnvDTE.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Microsoft.VisualStudio.CommandBars.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\stdole.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\VSLangProj.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\EnvDTE80.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Microsoft.VisualStudio.Designer.Interfaces.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Microsoft.MSXML.dll
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Microsoft.VisualStudio.TemplateWizardInterface.xml
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Release\Microsoft.VisualStudio.Designer.Interfaces.xml
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmPackingVI.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmBalCF.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmbatch.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmBatchGenerator.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmChallan.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmChangePass.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmCompany.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmCompChart.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.FrmCustomer.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmDayBook.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmDispose_Staus.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmExperiment.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmfgmaster.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmFG_OpeningStock.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmExpiredProduct.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmFindSupplier.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmFinishGoodQC.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmGoodsReturn.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmGroup.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmInvoice.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmitem.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmJobWorkIssue.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmJWReturn.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmLicense.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmLogin.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.FrmMain.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.FrmMainNew.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmMat_Issue.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmMDI.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmNonConProduct.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmPara.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmPara1.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmParaForExpireaation.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmpop.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmPurchaseOrder.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmQC.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmRecallReg.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmrejection.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmReport.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmRM_Opening_Stock.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmRejectionComponent.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptLineClearance.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptProductWiseRejection.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptMISRejectionComponent.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptBWFG.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptDateWisePackingVI.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptFG_Expired.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptRejectionComponent.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptRM_Rejection.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptWORegister.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmSemiFG_Mat_Issue.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmSemiFinishGoodQC.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmSemiBatchGenerator.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmSemiFGBatch.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmSemifgmaster.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.FrmSupplier.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmTradingItemInward.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.FrmUnit.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmUnitConversion.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmunitmas.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.FrmUser.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.Resources.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptBatchRecall.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptBatchReg.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptBOM.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptChallan.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptChallanRecall.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptCompReg.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptCustomer.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptCWPWSales.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptCW_BW_Sales.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptDaybook.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptDemoIssue.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptDemoRet.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptDemoSales.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptDisposition.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptDispostion.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptFGQC.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptFinalProduct.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptGoodsRet.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptInwardTriplicate.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptMatIndentSlip.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptMinMaxQty.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptMIS.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptMISRecall.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptNonConProuduct.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptOrder.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptPendingMIS.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptPendingOrders.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptPendingRMVI.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptPendingSterilization.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptPendingVI.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptPO.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptPurchaseReg.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptRecallReg.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptRMITEMLIST.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptRMQC.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptRMStock.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptSalesReg.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptSubBatchStock.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptSupplier.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.rptTI.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmSemiRejectionComponent.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory_Shaili.frmSemi_FG_Opening_Stock.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory Shaili.vbproj.GenerateResource.cache
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory Shaili.exe.licenses
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory Shaili.vbproj.CoreCompileInputs.cache
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory Shaili.vbproj.CopyComplete
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory Shaili.exe
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory Shaili.xml
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory Shaili.pdb
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Release\Inventory Shaili.vbprojAssemblyReference.cache

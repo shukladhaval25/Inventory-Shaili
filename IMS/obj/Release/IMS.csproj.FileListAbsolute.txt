@@ -2,3 +2,9 @@ C:\Software Projects\Invetory Shaili 2015\IMS\bin\Release\IMS.dll
 C:\Software Projects\Invetory Shaili 2015\IMS\bin\Release\IMS.pdb
 C:\Software Projects\Invetory Shaili 2015\IMS\obj\Release\IMS.dll
 C:\Software Projects\Invetory Shaili 2015\IMS\obj\Release\IMS.pdb
+C:\Application Softwares\Invetory Shaili 2015\IMS\bin\Release\IMS.dll
+C:\Application Softwares\Invetory Shaili 2015\IMS\bin\Release\IMS.pdb
+C:\Application Softwares\Invetory Shaili 2015\IMS\obj\Release\IMS.csprojAssemblyReference.cache
+C:\Application Softwares\Invetory Shaili 2015\IMS\obj\Release\IMS.csproj.CoreCompileInputs.cache
+C:\Application Softwares\Invetory Shaili 2015\IMS\obj\Release\IMS.dll
+C:\Application Softwares\Invetory Shaili 2015\IMS\obj\Release\IMS.pdb
