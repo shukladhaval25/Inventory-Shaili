@@ -1,0 +1,1722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C83740CC-989D-4703-8253-AEE498F51ACD}</ProjectGuid>
+    <SccProjectName>"%24/Docsvault SB 6.0", BAAAAAAA</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>dvClient</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Docsvault_SB</RootNamespace>
+    <StartupObject>Sub Main</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <SccAuxPath>
+    </SccAuxPath>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>dvClient.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>dvClient.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <OutputPath>bin\Debug\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\Release\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.MCDBXLib, Version=1.0.0.0, Culture=neutral" />
+    <Reference Include="CustomFieldsControl, Version=5.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CustomFieldsControl\bin\Release\CustomFieldsControl.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomLayoutControl, Version=5.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CustomLayoutControl\bin\Release\CustomLayoutControl.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Reports.v12.1.Designer, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1.Extensions, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Reporting.Extensions, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Reporting, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DVCommon, Version=5.7.1025.0, Culture=neutral, PublicKeyToken=00de25bbc09d980a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DVCommon\bin\Release\DVCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GdPicture.NET, Version=8.2.0.1, Culture=neutral, PublicKeyToken=b7f298a24d8f9345, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\GdPicture.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.FwCplLua, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Interop.FwCplLua.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.MCDBXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.NetFwTypeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Interop.NetFwTypeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="OpenDialog, Version=5.7.927.0, Culture=neutral, PublicKeyToken=d4c25560d0a202e5, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenDialog\bin\OpenDialog.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenVault, Version=6.0.0.0, Culture=neutral, PublicKeyToken=032f321270698ca4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Openvault\bin\OpenVault.dll</HintPath>
+    </Reference>
+    <Reference Include="ProfileProperty, Version=5.7.1025.0, Culture=neutral, PublicKeyToken=082ef6c37a531422, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProfileProperty\bin\Release\ProfileProperty.dll</HintPath>
+    </Reference>
+    <Reference Include="RecordManagement, Version=5.7.1025.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RecordManagement\bin\Release\RecordManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SaveAs.png" />
+    <Content Include="Resources\xls.png" />
+    <Content Include="Resources\xlsx.png" />
+    <Content Include="Resources\xml.png" />
+    <EmbeddedResource Include="frmCreateFileFromTemplate.resx">
+      <DependentUpon>frmCreateFileFromTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateShare.resx">
+      <DependentUpon>frmCreateShare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditFileTemplate.resx">
+      <DependentUpon>frmEditFileTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditPropertyTemplate.resx">
+      <DependentUpon>frmEditPropertyTemplate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditPropertyTemplate.tr-TR.resx">
+      <DependentUpon>frmEditPropertyTemplate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExternalSource.resx">
+      <DependentUpon>frmExternalSource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfMergeMultiple.resx">
+      <DependentUpon>frmPdfMergeMultiple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropFromFile.resx">
+      <DependentUpon>frmPropFromFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShareConfig.resx">
+      <DependentUpon>frmShareConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUninstaller.resx">
+      <DependentUpon>frmUninstaller.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUninstaller.tr-TR.resx">
+      <DependentUpon>frmUninstaller.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="rtn.ico" />
+    <None Include="Resources\Zonal-OCR-2.ico" />
+    <None Include="app.config" />
+    <EmbeddedResource Include="AppIcon.ico" />
+    <EmbeddedResource Include="ctlDocumentNotes.resx">
+      <DependentUpon>ctlDocumentNotes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddins.resx">
+      <DependentUpon>frmAddins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCabinetWizard.resx">
+      <DependentUpon>frmCabinetWizard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOutAddins.resx">
+      <DependentUpon>frmCheckOutAddins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddFileFolder.resx">
+      <DependentUpon>frmAddFileFolder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatesNumber.resx">
+      <DependentUpon>frmBatesNumber.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckinViewOpt.resx">
+      <DependentUpon>frmCheckinViewOpt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelEmailAlertConfirm.resx">
+      <DependentUpon>frmDelEmailAlertConfirm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdialogscan.resx">
+      <DependentUpon>frmdialogscan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrorFileList.resx">
+      <DependentUpon>frmErrorFileList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFlag.resx">
+      <DependentUpon>frmFlag.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFolderPropertyTemplate.resx">
+      <DependentUpon>frmFolderPropertyTemplate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIcon.resx">
+      <DependentUpon>FrmIcon.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMakeCurrent.resx">
+      <DependentUpon>frmMakeCurrent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMakeCurrent.tr-TR.resx">
+      <DependentUpon>frmMakeCurrent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMsgForm.resx">
+      <DependentUpon>frmMsgForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMsgForm.tr-TR.resx">
+      <DependentUpon>frmMsgForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewADR.resx">
+      <DependentUpon>frmNewADR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewADR.tr-TR.resx">
+      <DependentUpon>frmNewADR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewFolder.resx">
+      <DependentUpon>frmNewFolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewFolder.tr-TR.resx">
+      <DependentUpon>frmNewFolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewFolderTemplate.resx">
+      <DependentUpon>frmNewFolderTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewFolderTemplate.tr-TR.resx">
+      <DependentUpon>frmNewFolderTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewScanSettings.resx">
+      <DependentUpon>frmNewScanSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewScanSettings.tr-TR.resx">
+      <DependentUpon>frmNewScanSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewTask.resx">
+      <DependentUpon>frmNewTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewTask.tr-TR.resx">
+      <DependentUpon>frmNewTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotes.resx">
+      <DependentUpon>frmNotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotes.tr-TR.resx">
+      <DependentUpon>frmNotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.tr-TR.resx">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOverwrite.resx">
+      <DependentUpon>frmOverwrite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOverwrite.tr-TR.resx">
+      <DependentUpon>frmOverwrite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOWMessage.resx">
+      <DependentUpon>frmOWMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOWMessage.tr-TR.resx">
+      <DependentUpon>frmOWMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOwnership.resx">
+      <DependentUpon>FrmOwnership.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOwnership.tr-TR.resx">
+      <DependentUpon>FrmOwnership.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPDFCropPages.resx">
+      <DependentUpon>frmPDFCropPages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPDFCropPages.tr-TR.resx">
+      <DependentUpon>frmPDFCropPages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfCustomStamp.resx">
+      <DependentUpon>frmPdfCustomStamp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfCustomStamp.tr-TR.resx">
+      <DependentUpon>frmPdfCustomStamp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfDelete.resx">
+      <DependentUpon>frmPdfDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfDelete.tr-TR.resx">
+      <DependentUpon>frmPdfDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfEditor.resx">
+      <DependentUpon>frmPdfEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfEditor.tr-TR.resx">
+      <DependentUpon>frmPdfEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPDFEditorClose.resx">
+      <DependentUpon>frmPDFEditorClose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPDFEditorClose.tr-TR.resx">
+      <DependentUpon>frmPDFEditorClose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPDFReorderAdv.resx">
+      <DependentUpon>frmPDFReorderAdv.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPDFViewer.resx">
+      <DependentUpon>frmPDFViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickEmail.resx">
+      <DependentUpon>frmQuickEmail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRTNRecSerSelect.resx">
+      <DependentUpon>FrmRTNRecSerSelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNCheckoutRecord.resx">
+      <DependentUpon>frmRTNCheckoutRecord.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNCheckoutRecord.tr-TR.resx">
+      <DependentUpon>frmRTNCheckoutRecord.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNRecordSeriesSelect.resx">
+      <DependentUpon>frmRTNRecordSeriesSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSection.resx">
+      <DependentUpon>frmSection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecurity.resx">
+      <DependentUpon>FrmSecurity.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSQLconnect.resx">
+      <DependentUpon>frmSQLconnect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalWFList.resx">
+      <DependentUpon>frmLocalWFList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalWFSetting.resx">
+      <DependentUpon>frmLocalWFSetting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemplateMsgBox.resx">
+      <DependentUpon>frmTemplateMsgBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemplateSelect.resx">
+      <DependentUpon>frmTemplateSelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanSettings.resx">
+      <DependentUpon>frmScanSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWatchFolderFiling.resx">
+      <DependentUpon>frmWatchFolderFiling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messages.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>messages.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messages.tr-TR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>messages.tr-TR.Designer.vb</LastGenOutput>
+      <DependentUpon>messages.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTNRecordSeries.resx">
+      <DependentUpon>RTNRecordSeries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchOptions.resx">
+      <DependentUpon>frmSearchOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TempForm.resx">
+      <DependentUpon>TempForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Down.png" />
+    <EmbeddedResource Include="EmptyRecyclebin.png" />
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPDFGoTo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPDFGoTo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfMerge.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPdfMerge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddProfile.resx">
+      <DependentUpon>frmAddProfile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddProperties.resx">
+      <DependentUpon>frmAddProperties.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuditevents.resx">
+      <DependentUpon>frmAuditevents.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBurnToCD.resx">
+      <DependentUpon>frmBurnToCD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeOwner.resx">
+      <DependentUpon>frmChangeOwner.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckin_New.resx">
+      <DependentUpon>frmCheckin_New.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOut.resx">
+      <DependentUpon>frmCheckOut.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteRecurrenceTask.resx">
+      <DependentUpon>frmDeleteRecurrenceTask.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisconnect.resx">
+      <DependentUpon>frmDisconnect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditCabinetFolder.resx">
+      <DependentUpon>frmEditCabinetFolder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExport.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfExtract.resx">
+      <DependentUpon>frmPdfExtract.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpdfFind.resx">
+      <DependentUpon>frmpdfFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInstall.resx">
+      <DependentUpon>frmInstall.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLinkFiles.resx">
+      <DependentUpon>frmLinkFiles.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfPageSize.resx">
+      <DependentUpon>frmPdfPageSize.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpdfPrinter.resx">
+      <DependentUpon>frmpdfPrinter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgress.resx">
+      <DependentUpon>frmProgress.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfPswd.resx">
+      <DependentUpon>frmPdfPswd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurgeAudit.resx">
+      <DependentUpon>frmPurgeAudit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecyclebin.resx">
+      <DependentUpon>frmRecyclebin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReminder.resx">
+      <DependentUpon>frmReminder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRequestCheckIn.resx">
+      <DependentUpon>frmRequestCheckIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaveSearch.resx">
+      <DependentUpon>frmSaveSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServerName.resx">
+      <DependentUpon>frmServerName.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaskMember.resx">
+      <DependentUpon>frmTaskMember.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaskNote.resx">
+      <DependentUpon>frmTaskNote.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVersionViewer.resx">
+      <DependentUpon>frmVersionViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYesNo.resx">
+      <DependentUpon>frmYesNo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FullRecyclebin.png" />
+    <EmbeddedResource Include="link.ico" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PREVIEW.JPG" />
+    <EmbeddedResource Include="Up.png" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsCheckInCheckout.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsClientSocket.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsDeleteFileFolders.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsDVNamespaceWatcher.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clsDVReceiveIPC.vb" />
+    <Compile Include="clsEntireNetwork.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsFile.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsFindOS.vb" />
+    <Compile Include="clsGetIcon.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsGrid.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsPDFPrintWatcher.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clsSQLDBOperation.vb" />
+    <Compile Include="clsTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTaskManipulation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTree.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsVer_Audit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ctlDocumentNotes.Designer.vb">
+      <DependentUpon>ctlDocumentNotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlDocumentNotes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomSkinTabControlViewInfo.vb" />
+    <Compile Include="CustomSkinViewInfoRegistrator.vb" />
+    <Compile Include="frmAddins.Designer.vb">
+      <DependentUpon>frmAddins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCabinetWizard.Designer.vb">
+      <DependentUpon>frmCabinetWizard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCabinetWizard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckOutAddins.Designer.vb">
+      <DependentUpon>frmCheckOutAddins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckOutAddins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckinViewOpt.Designer.vb">
+      <DependentUpon>frmCheckinViewOpt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckinViewOpt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateFileFromTemplate.Designer.vb">
+      <DependentUpon>frmCreateFileFromTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateFileFromTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateShare.Designer.vb">
+      <DependentUpon>frmCreateShare.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateShare.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelEmailAlertConfirm.Designer.vb">
+      <DependentUpon>frmDelEmailAlertConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelEmailAlertConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddFileFolder.Designer.vb">
+      <DependentUpon>frmAddFileFolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddFileFolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatesNumber.Designer.vb">
+      <DependentUpon>frmBatesNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatesNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdialogscan.Designer.vb">
+      <DependentUpon>frmdialogscan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmdialogscan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditFileTemplate.Designer.vb">
+      <DependentUpon>frmEditFileTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditFileTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditPropertyTemplate.Designer.vb">
+      <DependentUpon>frmEditPropertyTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditPropertyTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErrorFileList.Designer.vb">
+      <DependentUpon>frmErrorFileList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmErrorFileList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExternalSource.Designer.vb">
+      <DependentUpon>frmExternalSource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExternalSource.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFlag.Designer.vb">
+      <DependentUpon>frmFlag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFolderPropertyTemplate.Designer.vb">
+      <DependentUpon>frmFolderPropertyTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFolderPropertyTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIcon.Designer.vb">
+      <DependentUpon>FrmIcon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIcon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMakeCurrent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMsgForm.Designer.vb">
+      <DependentUpon>frmMsgForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMsgForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewADR.Designer.vb">
+      <DependentUpon>frmNewADR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewADR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewFolder.Designer.vb">
+      <DependentUpon>frmNewFolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewFolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewFolderTemplate.Designer.vb">
+      <DependentUpon>frmNewFolderTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewFolderTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewScanSettings.Designer.vb">
+      <DependentUpon>frmNewScanSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewScanSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewTask.Designer.vb">
+      <DependentUpon>frmNewTask.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOverwrite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOWMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOwnership.Designer.vb">
+      <DependentUpon>FrmOwnership.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOwnership.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPDFCropPages.Designer.vb">
+      <DependentUpon>frmPDFCropPages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPDFCropPages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPdfCustomStamp.designer.vb">
+      <DependentUpon>frmPdfCustomStamp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPdfCustomStamp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPdfDelete.Designer.vb">
+      <DependentUpon>frmPdfDelete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPdfDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPdfEditor.designer.vb">
+      <DependentUpon>frmPdfEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPdfEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPDFEditorClose.Designer.vb">
+      <DependentUpon>frmPDFEditorClose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPDFEditorClose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPdfMergeMultiple.Designer.vb">
+      <DependentUpon>frmPdfMergeMultiple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPdfMergeMultiple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPDFReorderAdv.Designer.vb">
+      <DependentUpon>frmPDFReorderAdv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPDFReorderAdv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPDFViewer.Designer.vb">
+      <DependentUpon>frmPDFViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPDFViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropFromFile.Designer.vb">
+      <DependentUpon>frmPropFromFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropFromFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuickEmail.Designer.vb">
+      <DependentUpon>frmQuickEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuickEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRTNRecSerSelect.Designer.vb">
+      <DependentUpon>FrmRTNRecSerSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRTNRecSerSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNCheckoutRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNRecordSeriesSelect.Designer.vb">
+      <DependentUpon>frmRTNRecordSeriesSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNRecordSeriesSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSection.Designer.vb">
+      <DependentUpon>frmSection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecurity.Designer.vb">
+      <DependentUpon>FrmSecurity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecurity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShareConfig.Designer.vb">
+      <DependentUpon>frmShareConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShareConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSQLconnect.Designer.vb">
+      <DependentUpon>frmSQLconnect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSQLconnect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalWFList.Designer.vb">
+      <DependentUpon>frmLocalWFList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalWFList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalWFSetting.Designer.vb">
+      <DependentUpon>frmLocalWFSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalWFSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemplateMsgBox.Designer.vb">
+      <DependentUpon>frmTemplateMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemplateMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemplateSelect.Designer.vb">
+      <DependentUpon>frmTemplateSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemplateSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScanSettings.Designer.vb">
+      <DependentUpon>frmScanSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmScanSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUninstaller.Designer.vb">
+      <DependentUpon>frmUninstaller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUninstaller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messages.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="messages.tr-TR.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>messages.tr-TR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RTNRecordSeries.Designer.vb">
+      <DependentUpon>RTNRecordSeries.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RTNRecordSeries.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmSearchOptions.Designer.vb">
+      <DependentUpon>frmSearchOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="TempForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataItem.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="eztwain.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPDFGoTo.Designer.vb">
+      <DependentUpon>FrmPDFGoTo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPDFGoTo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPdfMerge.designer.vb">
+      <DependentUpon>frmPdfMerge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPdfMerge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuditevents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBurnToCD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeOwner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckin_New.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteRecurrenceTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisconnect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditCabinetFolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPdfExtract.designer.vb">
+      <DependentUpon>frmPdfExtract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPdfExtract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpdfFind.designer.vb">
+      <DependentUpon>frmpdfFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpdfFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInstall.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmLinkFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPdfPageSize.designer.vb">
+      <DependentUpon>frmPdfPageSize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPdfPageSize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpdfPrinter.designer.vb">
+      <DependentUpon>frmpdfPrinter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpdfPrinter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPdfPswd.designer.vb">
+      <DependentUpon>frmPdfPswd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPdfPswd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurgeAudit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecyclebin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReminder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRequestCheckIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaveSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServerName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaskMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaskNote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVersionViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYesNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainModule.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModDataset.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SHFileOperation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StructureProperty.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmWatchFolderFiling.Designer.vb">
+      <DependentUpon>frmWatchFolderFiling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWatchFolderFiling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDownloadOCR.Designer.vb">
+      <DependentUpon>frmDownloadOCR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDownloadOCR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomizeSearchColumn.Designer.vb">
+      <DependentUpon>frmCustomizeSearchColumn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomizeSearchColumn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm2.Designer.vb">
+      <DependentUpon>XtraForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm3.Designer.vb">
+      <DependentUpon>XtraForm3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="Changes log.txt" />
+    <EmbeddedResource Include="First.png" />
+    <Content Include="hourglass.gif" />
+    <None Include="Resources\approvedstamp.png" />
+    <None Include="Resources\client_Login.png" />
+    <EmbeddedResource Include="RegisterExtensionDotNet40_x64.exe" />
+    <Content Include="Resources\cross.gif" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\discard.png" />
+    <None Include="Resources\Draftstamp.png" />
+    <None Include="Resources\editProfile.png" />
+    <None Include="Resources\email_attachment.png" />
+    <None Include="Resources\export.png" />
+    <Content Include="Resources\csv.png" />
+    <Content Include="Resources\foldertofolder_32.png" />
+    <None Include="Resources\highlight_green.png" />
+    <None Include="Resources\highlight_yellow.png" />
+    <Content Include="Resources\icon_cross.gif" />
+    <None Include="Resources\nextGrey.gif" />
+    <None Include="Resources\OCR_cursor2.ico" />
+    <None Include="Resources\plus-circle.png" />
+    <Content Include="Resources\pdf.png" />
+    <Content Include="Resources\plus.png" />
+    <None Include="Resources\Plus_Green.png" />
+    <None Include="Resources\plusgreen.png" />
+    <None Include="Resources\PrevGrey.gif" />
+    <None Include="Resources\previousGrey.gif" />
+    <Content Include="Resources\recycle.png" />
+    <Content Include="Resources\recycle_ful.png" />
+    <Content Include="Resources\SAVE.png" />
+    <None Include="Resources\save_search %282%29.png" />
+    <None Include="Resources\upfolder_16.png" />
+    <None Include="Resources\thumbnails_nextGrey.gif" />
+    <None Include="Resources\thumbnails_prevtGrey.gif" />
+    <None Include="Resources\profile2_281.png" />
+    <None Include="Resources\profile2_28.png" />
+    <None Include="Resources\General.png" />
+    <None Include="Resources\newtask_28.png" />
+    <None Include="Resources\newtask_281.png" />
+    <None Include="Resources\search.gif" />
+    <EmbeddedResource Include="Strip.jpg" />
+    <EmbeddedResource Include="Next.png" />
+    <EmbeddedResource Include="Last.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\shape_group.png" />
+    <None Include="Resources\filjpg.bmp" />
+    <None Include="Resources\Color1.png" />
+    <None Include="Resources\Color.png" />
+    <EmbeddedResource Include="Minus.png" />
+    <EmbeddedResource Include="Plus.png" />
+    <EmbeddedResource Include="Previous.png" />
+    <EmbeddedResource Include="frmDownloadOCR.resx">
+      <DependentUpon>frmDownloadOCR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomizeSearchColumn.resx">
+      <DependentUpon>frmCustomizeSearchColumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm2.resx">
+      <DependentUpon>XtraForm2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm3.resx">
+      <DependentUpon>XtraForm3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.tr-TR.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlDocumentNotes.tr-TR.resx">
+      <DependentUpon>ctlDocumentNotes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddFileFolder.tr-TR.resx">
+      <DependentUpon>frmAddFileFolder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddins.tr-TR.resx">
+      <DependentUpon>frmAddins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddProfile.tr-TR.resx">
+      <DependentUpon>frmAddProfile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddProperties.tr-TR.resx">
+      <DependentUpon>frmAddProperties.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBurnToCD.tr-TR.resx">
+      <DependentUpon>frmBurnToCD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCabinetWizard.tr-TR.resx">
+      <DependentUpon>frmCabinetWizard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeOwner.tr-TR.resx">
+      <DependentUpon>frmChangeOwner.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.tr-TR.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckin_New.tr-TR.resx">
+      <DependentUpon>frmCheckin_New.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOut.tr-TR.resx">
+      <DependentUpon>frmCheckOut.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelEmailAlertConfirm.tr-TR.resx">
+      <DependentUpon>frmDelEmailAlertConfirm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteRecurrenceTask.tr-TR.resx">
+      <DependentUpon>frmDeleteRecurrenceTask.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDownloadOCR.tr-TR.resx">
+      <DependentUpon>frmDownloadOCR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditCabinetFolder.tr-TR.resx">
+      <DependentUpon>frmEditCabinetFolder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExport.tr-TR.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFlag.tr-TR.resx">
+      <DependentUpon>frmFlag.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFolderPropertyTemplate.tr-TR.resx">
+      <DependentUpon>frmFolderPropertyTemplate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIcon.tr-TR.resx">
+      <DependentUpon>FrmIcon.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.tr-TR.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.tr-TR.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfExtract.tr-TR.resx">
+      <DependentUpon>frmPdfExtract.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpdfFind.tr-TR.resx">
+      <DependentUpon>frmpdfFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPDFGoTo.tr-TR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPDFGoTo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfMerge.tr-TR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPdfMerge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfPageSize.tr-TR.resx">
+      <DependentUpon>frmPdfPageSize.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpdfPrinter.tr-TR.resx">
+      <DependentUpon>frmpdfPrinter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPDFReorderAdv.tr-TR.resx">
+      <DependentUpon>frmPDFReorderAdv.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPDFViewer.tr-TR.resx">
+      <DependentUpon>frmPDFViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgress.tr-TR.resx">
+      <DependentUpon>frmProgress.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurgeAudit.tr-TR.resx">
+      <DependentUpon>frmPurgeAudit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickEmail.tr-TR.resx">
+      <DependentUpon>frmQuickEmail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRequestCheckIn.tr-TR.resx">
+      <DependentUpon>frmRequestCheckIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaveSearch.tr-TR.resx">
+      <DependentUpon>frmSaveSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.tr-TR.resx">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSection.tr-TR.resx">
+      <DependentUpon>frmSection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecurity.tr-TR.resx">
+      <DependentUpon>FrmSecurity.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemplateSelect.tr-TR.resx">
+      <DependentUpon>frmTemplateSelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWatchFolderFiling.tr-TR.resx">
+      <DependentUpon>frmWatchFolderFiling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.tr-TR.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TempForm.tr-TR.resx">
+      <DependentUpon>TempForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm3.tr-TR.resx">
+      <DependentUpon>XtraForm3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuditevents.tr-TR.resx">
+      <DependentUpon>frmAuditevents.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatesNumber.tr-TR.resx">
+      <DependentUpon>frmBatesNumber.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckinViewOpt.tr-TR.resx">
+      <DependentUpon>frmCheckinViewOpt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOutAddins.tr-TR.resx">
+      <DependentUpon>frmCheckOutAddins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdialogscan.tr-TR.resx">
+      <DependentUpon>frmdialogscan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisconnect.tr-TR.resx">
+      <DependentUpon>frmDisconnect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrorFileList.tr-TR.resx">
+      <DependentUpon>frmErrorFileList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLinkFiles.tr-TR.resx">
+      <DependentUpon>frmLinkFiles.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalWFList.tr-TR.resx">
+      <DependentUpon>frmLocalWFList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalWFSetting.tr-TR.resx">
+      <DependentUpon>frmLocalWFSetting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfPswd.tr-TR.resx">
+      <DependentUpon>frmPdfPswd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecyclebin.tr-TR.resx">
+      <DependentUpon>frmRecyclebin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReminder.tr-TR.resx">
+      <DependentUpon>frmReminder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanSettings.tr-TR.resx">
+      <DependentUpon>frmScanSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServerName.tr-TR.resx">
+      <DependentUpon>frmServerName.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSQLconnect.tr-TR.resx">
+      <DependentUpon>frmSQLconnect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaskMember.tr-TR.resx">
+      <DependentUpon>frmTaskMember.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaskNote.tr-TR.resx">
+      <DependentUpon>frmTaskNote.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemplateMsgBox.tr-TR.resx">
+      <DependentUpon>frmTemplateMsgBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.tr-TR.resx">
+      <DependentUpon>frmUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVersionViewer.tr-TR.resx">
+      <DependentUpon>frmVersionViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYesNo.tr-TR.resx">
+      <DependentUpon>frmYesNo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomizeSearchColumn.tr-TR.resx">
+      <DependentUpon>frmCustomizeSearchColumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNRecordSeriesSelect.tr-TR.resx">
+      <DependentUpon>frmRTNRecordSeriesSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRTNRecSerSelect.tr-TR.resx">
+      <DependentUpon>FrmRTNRecSerSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchOptions.tr-TR.resx">
+      <DependentUpon>frmSearchOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateShare.tr-TR.resx">
+      <DependentUpon>frmCreateShare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPdfMergeMultiple.tr-TR.resx">
+      <DependentUpon>frmPdfMergeMultiple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateFileFromTemplate.tr-TR.resx">
+      <DependentUpon>frmCreateFileFromTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditFileTemplate.tr-TR.resx">
+      <DependentUpon>frmEditFileTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExternalSource.tr-TR.resx">
+      <DependentUpon>frmExternalSource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropFromFile.tr-TR.resx">
+      <DependentUpon>frmPropFromFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShareConfig.tr-TR.resx">
+      <DependentUpon>frmShareConfig.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DVImageViewer\DVImageViewer.vbproj">
+      <Project>{305EB445-CAD9-4B3E-88E3-E756AF6A267C}</Project>
+      <Name>DVImageViewer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxVSPDFEditorX">
+      <Guid>{2C2F9AF6-248A-43FB-8EC9-DEDE2E0CB519}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MCDBXLib">
+      <Guid>{BF92EAD0-5055-4E92-99A8-AEF79524CD2F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VSPDFEditorX">
+      <Guid>{2C2F9AF6-248A-43FB-8EC9-DEDE2E0CB519}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <PostBuildEvent>"%25programfiles%25\Microsoft SDKs\Windows\v7.0A\bin\signtool.exe" sign  /f  "E:\Docsvault SB 6.0\Code Signing Cert\EDA.pfx" /d "Docsvault Small Business Client" /du http://www.docsvault.com/  /t  "http://timestamp.comodoca.com/authenticode"  /p "03corptech04"  "$(ProjectDir)\obj\$(ConfigurationName)\*.exe"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

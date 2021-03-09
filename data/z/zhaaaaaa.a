@@ -1,0 +1,1036 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9E6FD5A-F043-4D7D-93D6-A513E75639AE}</ProjectGuid>
+    <SccProjectName>"%24/Docsvault SB 6.0", BAAAAAAA</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>dvSvrMgr</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Server_Application</RootNamespace>
+    <StartupObject>Server_Application.MainModule</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <SccAuxPath>
+    </SccAuxPath>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/dvSvrMgr/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>dvSvrMgr.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>dvSvrMgr.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChilkatDotNet4, Version=9.4.0.0, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ChilkatDotNet4.dll</HintPath>
+    </Reference>
+    <Reference Include="DBOperation, Version=5.2.0.0, Culture=neutral, PublicKeyToken=5f9107601ed19ff1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DBOperation\bin\DBOperation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Reports.v12.1.Designer, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.SpellChecker.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraWizard.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DVCommon, Version=5.5.726.0, Culture=neutral, PublicKeyToken=00de25bbc09d980a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DVCommon\bin\Release\DVCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GdPicture.NET, Version=7.4.0.10, Culture=neutral, PublicKeyToken=b7f298a24d8f9345, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\GdPicture.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.FwCplLua, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Interop.FwCplLua.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.NetFwTypeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Interop.NetFwTypeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Search.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9f748985a6e9a7cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="OpenVault, Version=5.5.726.0, Culture=neutral, PublicKeyToken=032f321270698ca4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Openvault\bin\OpenVault.dll</HintPath>
+    </Reference>
+    <Reference Include="RecordManagement">
+      <HintPath>..\RecordManagement\bin\Release\RecordManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <Name>System.ServiceProcess</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TaskScheduler, Version=1.1.2212.25507, Culture=neutral" />
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <Reference Include="UnRARNET, Version=1.0.4330.21113, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\UnRARNET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBackupWarning.Designer.vb">
+      <DependentUpon>FrmBackupWarning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBackupWarning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmailCapture.Designer.vb">
+      <DependentUpon>frmEmailCapture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmailCapture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExtendTrial.Designer.vb">
+      <DependentUpon>frmExtendTrial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExtendTrial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExternalSource.Designer.vb">
+      <DependentUpon>frmExternalSource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExternalSource.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExtUser.Designer.vb">
+      <DependentUpon>frmExtUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExtUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInstallIfilter.Designer.vb">
+      <DependentUpon>frmInstallIfilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInstallIfilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageUnrar.Designer.vb">
+      <DependentUpon>frmMessageUnrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessageUnrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropFromFile.Designer.vb">
+      <DependentUpon>frmPropFromFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropFromFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultForm.Designer.vb">
+      <DependentUpon>frmResultForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYesNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestConnection.Designer.vb">
+      <DependentUpon>TestConnection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestConnection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFirewall.vb" />
+    <EmbeddedResource Include="FrmBackupWarning.resx">
+      <DependentUpon>FrmBackupWarning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActExpired.resx">
+      <DependentUpon>frmActExpired.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivation.resx">
+      <DependentUpon>frmActivation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivedirectorySetting.resx">
+      <DependentUpon>frmActivedirectorySetting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddADUsers.resx">
+      <DependentUpon>frmAddADUsers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddProfile.resx">
+      <DependentUpon>frmAddProfile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddProperties.resx">
+      <DependentUpon>frmAddProperties.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuditNew.resx">
+      <DependentUpon>frmAuditNew.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackuRestoreProcessingImage.resx">
+      <DependentUpon>frmBackuRestoreProcessingImage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBroadcastEmail.resx">
+      <DependentUpon>frmBroadcastEmail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeSapwd.resx">
+      <DependentUpon>frmChangeSapwd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDBChange.resx">
+      <DependentUpon>frmDBChange.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmailCapture.resx">
+      <DependentUpon>frmEmailCapture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExtendTrial.resx">
+      <DependentUpon>frmExtendTrial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExternalSource.resx">
+      <DependentUpon>frmExternalSource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExtUser.resx">
+      <DependentUpon>frmExtUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFirstRun.resx">
+      <DependentUpon>frmFirstRun.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroup.resx">
+      <DependentUpon>frmGroup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInstaller.resx">
+      <DependentUpon>frmInstaller.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInstallIfilter.resx">
+      <DependentUpon>frmInstallIfilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKeyDetails.resx">
+      <DependentUpon>FrmKeyDetails.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMsg.resx">
+      <DependentUpon>frmMsg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOCRSummary.resx">
+      <DependentUpon>frmOCRSummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropertySelect.resx">
+      <DependentUpon>frmPropertySelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropFromFile.resx">
+      <DependentUpon>frmPropFromFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurgeAudit.resx">
+      <DependentUpon>frmPurgeAudit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurgeFiles.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPurgeFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecepientAddress.resx">
+      <DependentUpon>frmRecepientAddress.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRestoreLog.resx">
+      <DependentUpon>frmRestoreLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultForm.resx">
+      <DependentUpon>frmResultForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServer.resx">
+      <DependentUpon>frmServer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetup.resx">
+      <DependentUpon>frmSetup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSQLInstancesOnNetwork.resx">
+      <DependentUpon>frmSQLInstancesOnNetwork.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemp.resx">
+      <DependentUpon>frmTemp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUninstaller.resx">
+      <DependentUpon>frmUninstaller.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserConfig.resx">
+      <DependentUpon>frmUserConfig.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserInformation.resx">
+      <DependentUpon>frmUserInformation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWarningForm.resx">
+      <DependentUpon>frmWarningForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWatchFolderWizard.resx">
+      <DependentUpon>frmWatchFolderWizard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYesNo.resx">
+      <DependentUpon>frmYesNo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYesNo.tr-TR.resx">
+      <DependentUpon>frmYesNo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hourglass.gif" />
+    <EmbeddedResource Include="LocalBackup.gif" />
+    <EmbeddedResource Include="LocalRestore.gif" />
+    <EmbeddedResource Include="manual_backup.png" />
+    <EmbeddedResource Include="MediaBackup.gif" />
+    <EmbeddedResource Include="MediaRestore.gif" />
+    <EmbeddedResource Include="messages.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>messages.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messages.tr-TR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>messages.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schedule_backup.png" />
+    <EmbeddedResource Include="setupStatus.resx">
+      <DependentUpon>setupStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TempServer.resx">
+      <DependentUpon>TempServer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmActExpired.Designer.vb">
+      <DependentUpon>frmActExpired.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActExpired.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActivation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActivedirectorySetting.Designer.vb">
+      <DependentUpon>frmActivedirectorySetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActivedirectorySetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddADUsers.Designer.vb">
+      <DependentUpon>frmAddADUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddADUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuditNew.Designer.vb">
+      <DependentUpon>frmAuditNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuditNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackuRestoreProcessingImage.Designer.vb">
+      <DependentUpon>frmBackuRestoreProcessingImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackuRestoreProcessingImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBroadcastEmail.Designer.vb">
+      <DependentUpon>frmBroadcastEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBroadcastEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeSapwd.Designer.vb">
+      <DependentUpon>frmChangeSapwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangeSapwd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDBChange.Designer.vb">
+      <DependentUpon>frmDBChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDBChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErrorFileList.Designer.vb">
+      <DependentUpon>frmErrorFileList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmErrorFileList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFirstRun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIndexMessage.Designer.vb">
+      <DependentUpon>FrmIndexMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIndexMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInstaller.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmInstallerMsg.Designer.vb">
+      <DependentUpon>frmInstallerMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInstallerMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKeyDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMsg.designer.vb">
+      <DependentUpon>frmMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOCRSummary.Designer.vb">
+      <DependentUpon>frmOCRSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOCRSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropertySelect.Designer.vb">
+      <DependentUpon>frmPropertySelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropertySelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurgeAudit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurgeFiles.Designer.vb">
+      <DependentUpon>frmPurgeFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurgeFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecepientAddress.Designer.vb">
+      <DependentUpon>frmRecepientAddress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecepientAddress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRestoreLog.Designer.vb">
+      <DependentUpon>frmRestoreLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRestoreLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSQLInstancesOnNetwork.Designer.vb">
+      <DependentUpon>frmSQLInstancesOnNetwork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSQLInstancesOnNetwork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSrvChangeLogon.Designer.vb">
+      <DependentUpon>frmSrvChangeLogon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSrvChangeLogon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUninstaller.Designer.vb">
+      <DependentUpon>frmUninstaller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUninstaller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserConfig.Designer.vb">
+      <DependentUpon>frmUserConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWarningForm.Designer.vb">
+      <DependentUpon>frmWarningForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWarningForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWatchFolderWizard.Designer.vb">
+      <DependentUpon>frmWatchFolderWizard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWatchFolderWizard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainModule.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="messages.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="modBrowseFolder.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceClass.vb" />
+    <Compile Include="frmSetup.Designer.vb">
+      <DependentUpon>frmSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setupStatus.Designer.vb">
+      <DependentUpon>setupStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setupStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQlInstances.vb" />
+    <Compile Include="TempServer.Designer.vb">
+      <DependentUpon>TempServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TempServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="frmActExpired.tr-TR.resx">
+      <DependentUpon>frmActExpired.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivation.tr-TR.resx">
+      <DependentUpon>frmActivation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivedirectorySetting.tr-TR.resx">
+      <DependentUpon>frmActivedirectorySetting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddADUsers.tr-TR.resx">
+      <DependentUpon>frmAddADUsers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddProfile.tr-TR.resx">
+      <DependentUpon>frmAddProfile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddProperties.tr-TR.resx">
+      <DependentUpon>frmAddProperties.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuditNew.tr-TR.resx">
+      <DependentUpon>frmAuditNew.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackuRestoreProcessingImage.tr-TR.resx">
+      <DependentUpon>frmBackuRestoreProcessingImage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBroadcastEmail.tr-TR.resx">
+      <DependentUpon>frmBroadcastEmail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.tr-TR.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeSapwd.tr-TR.resx">
+      <DependentUpon>frmChangeSapwd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDBChange.tr-TR.resx">
+      <DependentUpon>frmDBChange.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFirstRun.tr-TR.resx">
+      <DependentUpon>frmFirstRun.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroup.tr-TR.resx">
+      <DependentUpon>frmGroup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKeyDetails.tr-TR.resx">
+      <DependentUpon>FrmKeyDetails.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.tr-TR.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMsg.tr-TR.resx">
+      <DependentUpon>frmMsg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOCRSummary.tr-TR.resx">
+      <DependentUpon>frmOCRSummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropertySelect.tr-TR.resx">
+      <DependentUpon>frmPropertySelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurgeAudit.tr-TR.resx">
+      <DependentUpon>frmPurgeAudit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurgeFiles.tr-TR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPurgeFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecepientAddress.tr-TR.resx">
+      <DependentUpon>frmRecepientAddress.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRestoreLog.tr-TR.resx">
+      <DependentUpon>frmRestoreLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServer.tr-TR.resx">
+      <DependentUpon>frmServer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetup.tr-TR.resx">
+      <DependentUpon>frmSetup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSQLInstancesOnNetwork.tr-TR.resx">
+      <DependentUpon>frmSQLInstancesOnNetwork.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemp.tr-TR.resx">
+      <DependentUpon>frmTemp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUninstaller.tr-TR.resx">
+      <DependentUpon>frmUninstaller.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.tr-TR.resx">
+      <DependentUpon>frmUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserInformation.tr-TR.resx">
+      <DependentUpon>frmUserInformation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWatchFolderWizard.tr-TR.resx">
+      <DependentUpon>frmWatchFolderWizard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.tr-TR.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setupStatus.tr-TR.resx">
+      <DependentUpon>setupStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TempServer.tr-TR.resx">
+      <DependentUpon>TempServer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessageUnrar.resx">
+      <DependentUpon>frmMessageUnrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessageUnrar.tr-TR.resx">
+      <DependentUpon>frmMessageUnrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBackupWarning.tr-TR.resx">
+      <DependentUpon>FrmBackupWarning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserConfig.tr-TR.resx">
+      <DependentUpon>frmUserConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWarningForm.tr-TR.resx">
+      <DependentUpon>frmWarningForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestConnection.resx">
+      <DependentUpon>TestConnection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmailCapture.tr-TR.resx">
+      <DependentUpon>frmEmailCapture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExtendTrial.tr-TR.resx">
+      <DependentUpon>frmExtendTrial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExternalSource.tr-TR.resx">
+      <DependentUpon>frmExternalSource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExtUser.tr-TR.resx">
+      <DependentUpon>frmExtUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInstallIfilter.tr-TR.resx">
+      <DependentUpon>frmInstallIfilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropFromFile.tr-TR.resx">
+      <DependentUpon>frmPropFromFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultForm.tr-TR.resx">
+      <DependentUpon>frmResultForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestConnection.tr-TR.resx">
+      <DependentUpon>TestConnection.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\1268225076_advancedsettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-script.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\loader-gif-images1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notep_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original_size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filerestore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tips1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+    <EmbeddedResource Include="frmErrorFileList.resx">
+      <DependentUpon>frmErrorFileList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIndexMessage.resx">
+      <DependentUpon>FrmIndexMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInstallerMsg.resx">
+      <DependentUpon>frmInstallerMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSrvChangeLogon.resx">
+      <DependentUpon>frmSrvChangeLogon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrorFileList.tr-TR.resx">
+      <DependentUpon>frmErrorFileList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIndexMessage.tr-TR.resx">
+      <DependentUpon>FrmIndexMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInstallerMsg.tr-TR.resx">
+      <DependentUpon>frmInstallerMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSrvChangeLogon.tr-TR.resx">
+      <DependentUpon>frmSrvChangeLogon.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DVSBDATABASE.sql" />
+    <EmbeddedResource Include="DVSBFUN.sql" />
+    <EmbeddedResource Include="DVSBPROC.sql" />
+    <EmbeddedResource Include="DVSBTABLE.sql" />
+    <EmbeddedResource Include="CREATEDOCSVAULTLOGIN.sql" />
+    <Content Include="Resources\export-1.png" />
+    <None Include="Resources\Plus.png" />
+    <None Include="Resources\Minus.png" />
+    <None Include="Resources\task_add.png" />
+    <None Include="Resources\icon_cross.gif" />
+    <None Include="Resources\plusgreen.png" />
+    <None Include="Resources\help1.ico" />
+    <Content Include="xMLfILE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProfileProperty\ProfileProperty.vbproj">
+      <Project>{8E2A172D-2D90-4023-8FE0-4E21556AF5A9}</Project>
+      <Name>ProfileProperty</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <PostBuildEvent>"%25programfiles%25\Microsoft SDKs\Windows\v7.0A\bin\signtool.exe" sign  /f  "E:\Docsvault SB 6.0\Code Signing Cert\EDA.pfx" /d "Docsvault Small Business Client" /du http://www.docsvault.com/  /t  "http://timestamp.comodoca.com/authenticode"  /p "03corptech04"  "$(ProjectDir)\obj\$(ConfigurationName)\*.exe"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

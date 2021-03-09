@@ -1,0 +1,650 @@
+*************************************************************************
+Date :11/06/2016 13:00:19
+Machine Name :DHAVAL-PC
+Product Version :
+Method :DbConn
+User :
+Error Message :Could not find file 'C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\bin\Debug\DB\Inventory Shaili09.mdb'.
+Details :System.Data.OleDb.OleDbException: Could not find file 'C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\bin\Debug\DB\Inventory Shaili09.mdb'.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at Inventory_Shaili.ModMain.DbConn()
+*************************************************************************
+Date :11/06/2016 13:01:04
+Machine Name :DHAVAL-PC
+Product Version :
+Method :DbConn
+User :
+Error Message :Could not find file 'C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\bin\Debug\DB\Inventory Shaili09.mdb'.
+Details :System.Data.OleDb.OleDbException: Could not find file 'C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\bin\Debug\DB\Inventory Shaili09.mdb'.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at Inventory_Shaili.ModMain.DbConn()
+*************************************************************************
+Date :18/06/2016 00:48:01
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :DbConn
+User :
+Error Message :No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+Details :System.Data.OleDb.OleDbException: No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at Inventory_Shaili.ModMain.DbConn() in C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 49
+*************************************************************************
+Date :03/09/2016 11:35:53
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :FillGrid
+User :
+Error Message :Syntax error in JOIN operation.
+Details :System.Data.OleDb.OleDbException: Syntax error in JOIN operation.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide)
+*************************************************************************
+Date :03/09/2016 11:35:53
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide)
+*************************************************************************
+Date :03/09/2016 11:35:53
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide)
+*************************************************************************
+Date :03/09/2016 11:47:56
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :FillCombox
+User :
+Error Message :No value given for one or more required parameters.
+Details :System.Data.OleDb.OleDbException: No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at Inventory_Shaili.ModMain.FillCombox(String strtable, String strfield, ComboBoxEdit& cboname)
+*************************************************************************
+Date :03/09/2016 15:54:59
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :frmPara.ShowMISRejectionReport
+User :
+Error Message :Extra ) in query expression '(((MIS_Return_Master.ID)=10) AND )'.
+Details :System.Data.OleDb.OleDbException: Extra ) in query expression '(((MIS_Return_Master.ID)=10) AND )'.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.frmPara.showMISRejectionReport(String strID)
+*************************************************************************
+Date :03/09/2016 16:17:34
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :frmPara.ShowMISRejectionReport
+User :
+Error Message :Syntax error in JOIN operation.
+Details :System.Data.OleDb.OleDbException: Syntax error in JOIN operation.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.frmPara.showSemiMISRejectionReport(String strID)
+*************************************************************************
+Date :21/01/2017 12:29:20
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :frmPara.ShowMISRejectionReport
+User :
+Error Message :No value given for one or more required parameters.
+Details :System.Data.OleDb.OleDbException: No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.frmPara.showSemiMISRejectionReport(String strID) in C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\frmPara.vb:line 3172
+*************************************************************************
+Date :21/01/2017 14:01:32
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :frmPara.ShowMISRejectionReport
+User :
+Error Message :Extra ) in query expression '(((MIS_Return_Master.ID)=))'.
+Details :System.Data.OleDb.OleDbException: Extra ) in query expression '(((MIS_Return_Master.ID)=))'.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.frmPara.showMISRejectionReport(String strID) in C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\frmPara.vb:line 3105
+*************************************************************************
+Date :21/01/2017 15:12:09
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :FillLookup
+User :
+Error Message :The table 'REQMASTER' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+Details :System.Data.OleDb.OleDbException: The table 'REQMASTER' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.ModMain.FillLookup(String Strquery, String strtable, String strID, String strName, LookUpEdit& lkupObj, String strFld, String strsql) in C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 213
+*************************************************************************
+Date :21/01/2017 15:12:09
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :FillLookup
+User :
+Error Message :The table 'REQMASTER' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+Details :System.Data.OleDb.OleDbException: The table 'REQMASTER' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.ModMain.FillLookup(String Strquery, String strtable, String strID, String strName, LookUpEdit& lkupObj, String strFld, String strsql) in C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 213
+*************************************************************************
+Date :18/02/2017 10:40:28
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :frmPara.ShowChallan
+User :
+Error Message :Operator '=' is not defined for type 'Date' and type 'VariantType'.
+Details :System.InvalidCastException: Operator '=' is not defined for type 'Date' and type 'VariantType'.
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Inventory_Shaili.frmPara.ShowChallan(String strChallanID)
+*************************************************************************
+Date :18/02/2017 10:40:28
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.0
+Method :frmPara.ShowChallan
+User :
+Error Message :Operator '=' is not defined for type 'Date' and type 'VariantType'.
+Details :System.InvalidCastException: Operator '=' is not defined for type 'Date' and type 'VariantType'.
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Inventory_Shaili.frmPara.ShowChallan(String strChallanID)
+*************************************************************************
+Date :30/03/2018 14:44:13
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.1
+Method :DbConn
+User :
+Error Message :No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+Details :System.Data.OleDb.OleDbException: No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at Inventory_Shaili.ModMain.DbConn() in C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 53
+*************************************************************************
+Date :30/03/2018 14:48:00
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.1
+Method :DbConn
+User :
+Error Message :No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+Details :System.Data.OleDb.OleDbException: No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at Inventory_Shaili.ModMain.DbConn() in C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 53
+*************************************************************************
+Date :30/03/2018 14:49:04
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.1
+Method :DbConn
+User :
+Error Message :No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+Details :System.Data.OleDb.OleDbException: No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at Inventory_Shaili.ModMain.DbConn() in C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 53
+*************************************************************************
+Date :30/03/2018 14:53:17
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.1
+Method :DbConn
+User :
+Error Message :No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+Details :System.Data.OleDb.OleDbException: No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at Inventory_Shaili.ModMain.DbConn() in C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 53
+*************************************************************************
+Date :30/03/2018 14:53:54
+Machine Name :DHAVAL-PC
+Product Version :1.0.1.1
+Method :DbConn
+User :
+Error Message :No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+Details :System.Data.OleDb.OleDbException: No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at Inventory_Shaili.ModMain.DbConn() in C:\Software Projects\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 53
+*************************************************************************
+Date :3/6/2021 3:07:49 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :DbConn
+User :
+Error Message :No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+Details :System.Data.OleDb.OleDbException (0x80040E4D): No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at Inventory_Shaili.ModMain.DbConn() in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 53
+*************************************************************************
+Date :3/6/2021 4:55:49 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :No value given for one or more required parameters.
+Details :System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 331
+*************************************************************************
+Date :3/6/2021 4:55:49 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 326
+*************************************************************************
+Date :3/6/2021 4:55:49 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide)
+*************************************************************************
+Date :3/6/2021 4:55:49 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide)
+*************************************************************************
+Date :3/6/2021 4:55:49 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide)
+*************************************************************************
+Date :3/8/2021 11:46:28 AM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :No value given for one or more required parameters.
+Details :System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 331
+*************************************************************************
+Date :3/8/2021 11:46:28 AM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 326
+*************************************************************************
+Date :3/8/2021 11:50:23 AM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :No value given for one or more required parameters.
+Details :System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide)
+*************************************************************************
+Date :3/8/2021 11:50:23 AM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide)
+*************************************************************************
+Date :3/8/2021 11:50:23 AM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide)
+*************************************************************************
+Date :3/8/2021 11:54:43 AM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :No value given for one or more required parameters.
+Details :System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 331
+*************************************************************************
+Date :3/8/2021 11:54:43 AM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 326
+*************************************************************************
+Date :3/8/2021 11:54:43 AM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 326
+*************************************************************************
+Date :3/8/2021 12:29:37 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+Details :System.InvalidOperationException: ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+   at System.Data.OleDb.OleDbConnectionInternal.ValidateTransaction(OleDbTransaction transaction, String method)
+   at System.Data.OleDb.OleDbConnection.ValidateTransaction(OleDbTransaction transaction, String method)
+   at System.Data.OleDb.OleDbCommand.ValidateConnectionAndTransaction(String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 331
+*************************************************************************
+Date :3/8/2021 5:03:11 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :No value given for one or more required parameters.
+Details :System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 331
+*************************************************************************
+Date :3/8/2021 5:03:11 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillGrid
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.ModMain.FillGrid(String StrQuery, String tlbName, ArrayList Arrhide)
+*************************************************************************
+Date :3/8/2021 5:24:14 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :frmPara.ShowChallan
+User :
+Error Message :Conversion from string "30/12/1899 00:00:00" to type 'Date' is not valid.
+Details :System.InvalidCastException: Conversion from string "30/12/1899 00:00:00" to type 'Date' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(String Value)
+   at Microsoft.VisualBasic.CompilerServices.Operators.CompareObject2(Object Left, Object Right, Boolean TextCompare)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Inventory_Shaili.frmPara.ShowChallan(String strChallanID) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\frmPara.vb:line 3213
+*************************************************************************
+Date :3/8/2021 5:24:14 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :frmPara.ShowChallan
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.frmPara.ShowChallan(String strChallanID) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\frmPara.vb:line 3178
+*************************************************************************
+Date :3/8/2021 5:25:22 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :frmPara.ShowChallan
+User :
+Error Message :Conversion from string "30/12/1899 00:00:00" to type 'Date' is not valid.
+Details :System.InvalidCastException: Conversion from string "30/12/1899 00:00:00" to type 'Date' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(String Value)
+   at Microsoft.VisualBasic.CompilerServices.Operators.CompareObject2(Object Left, Object Right, Boolean TextCompare)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Inventory_Shaili.frmPara.ShowChallan(String strChallanID) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\frmPara.vb:line 3213
+*************************************************************************
+Date :3/8/2021 5:28:10 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :frmPara.ShowChallan
+User :
+Error Message :Conversion from string "30/12/1899 00:00:00" to type 'Date' is not valid.
+Details :System.InvalidCastException: Conversion from string "30/12/1899 00:00:00" to type 'Date' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(String Value)
+   at Microsoft.VisualBasic.CompilerServices.Operators.CompareObject2(Object Left, Object Right, Boolean TextCompare)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Inventory_Shaili.frmPara.ShowChallan(String strChallanID) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\frmPara.vb:line 3213
+*************************************************************************
+Date :3/8/2021 5:28:10 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :frmPara.ShowChallan
+User :
+Error Message :Conversion from string "30/12/1899 00:00:00" to type 'Date' is not valid.
+Details :System.InvalidCastException: Conversion from string "30/12/1899 00:00:00" to type 'Date' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(String Value)
+   at Microsoft.VisualBasic.CompilerServices.Operators.CompareObject2(Object Left, Object Right, Boolean TextCompare)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Inventory_Shaili.frmPara.ShowChallan(String strChallanID) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\frmPara.vb:line 3213
+*************************************************************************
+Date :3/8/2021 5:32:13 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :frmPara.ShowChallan
+User :
+Error Message :Conversion from string "30/12/1899 00:00:00" to type 'Date' is not valid.
+Details :System.InvalidCastException: Conversion from string "30/12/1899 00:00:00" to type 'Date' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(String Value)
+   at Microsoft.VisualBasic.CompilerServices.Operators.CompareObject2(Object Left, Object Right, Boolean TextCompare)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Inventory_Shaili.frmPara.ShowChallan(String strChallanID) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\frmPara.vb:line 3219
+*************************************************************************
+Date :3/8/2021 5:35:52 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :frmPara.ShowChallan
+User :
+Error Message :Object reference not set to an instance of an object.
+Details :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Inventory_Shaili.frmPara.ShowChallan(String strChallanID) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\frmPara.vb:line 3178
+*************************************************************************
+Date :3/8/2021 6:52:55 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillLookup
+User :
+Error Message :Cross-thread operation not valid: Control 'lkupReqNo' accessed from a thread other than the thread it was created on.
+Details :System.InvalidOperationException: Cross-thread operation not valid: Control 'lkupReqNo' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.PointToClientInternal(Point p)
+   at DevExpress.XtraEditors.BaseControl.LayoutChangedCore(Boolean invalidateVisual)
+   at DevExpress.XtraEditors.BaseEdit.LayoutChanged()
+   at DevExpress.XtraEditors.TextEdit.LayoutChanged(Boolean updateMask)
+   at DevExpress.XtraEditors.TextEdit.LayoutChanged()
+   at DevExpress.XtraEditors.BaseControl.OnPropertiesChanged()
+   at DevExpress.XtraEditors.BaseEdit.OnPropertiesChanged()
+   at DevExpress.XtraEditors.PopupBaseEdit.OnPropertiesChanged()
+   at DevExpress.XtraEditors.BaseControl.OnPropertiesChanged(Boolean shrpc)
+   at DevExpress.XtraEditors.Repository.RepositoryItem.OnPropertiesChanged(EventArgs pchea)
+   at DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit.OnPropertiesChanged()
+   at DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit.Columns_CollectionChanged(Object sender, CollectionChangeEventArgs e)
+   at DevExpress.XtraEditors.Controls.LookUpColumnInfoCollection.OnCollectionChanged(CollectionChangeEventArgs e)
+   at DevExpress.XtraEditors.Controls.LookUpColumnInfoCollection.OnClearComplete()
+   at System.Collections.CollectionBase.Clear()
+   at Inventory_Shaili.ModMain.FillLookup(String Strquery, String strtable, String strID, String strName, LookUpEdit& lkupObj, String strFld, String strsql) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 221
+*************************************************************************
+Date :3/8/2021 8:37:25 PM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :FillLookup
+User :
+Error Message :Syntax error (missing operator) in query expression 'Case REQMASTER.REQID'.
+Details :System.Data.OleDb.OleDbException (0x80040E14): Syntax error (missing operator) in query expression 'Case REQMASTER.REQID'.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at Inventory_Shaili.ModMain.FillLookup(String Strquery, String strtable, String strID, String strName, LookUpEdit& lkupObj, String strFld, String strsql) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\modMain.vb:line 213

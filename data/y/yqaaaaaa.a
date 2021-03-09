@@ -1,0 +1,5 @@
+﻿Public Interface ILog
+    Sub WriteLog(ByVal logs As Logs)
+    Function GetLog() As String
+    Sub ClearLog()
+End Interface

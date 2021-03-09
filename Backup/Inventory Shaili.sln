@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Inventory Shaili", "Inventory Shaili\Inventory Shaili.vbproj", "{5264F7C3-3378-4761-9102-A19C5ED07580}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Inventory Shaili Setup", "Inventory Shaili Setup\Inventory Shaili Setup.vdproj", "{72593883-D0A1-40EF-92F0-2EE5F78C4F20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5264F7C3-3378-4761-9102-A19C5ED07580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5264F7C3-3378-4761-9102-A19C5ED07580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5264F7C3-3378-4761-9102-A19C5ED07580}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5264F7C3-3378-4761-9102-A19C5ED07580}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{72593883-D0A1-40EF-92F0-2EE5F78C4F20}.Debug|Any CPU.ActiveCfg = Release
+		{72593883-D0A1-40EF-92F0-2EE5F78C4F20}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

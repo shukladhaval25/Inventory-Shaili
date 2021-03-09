@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{D45C27BE-BC93-47C9-8D69-7E9ECE7D04B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RecordManagement</RootNamespace>
+    <AssemblyName>RecordManagement</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>"%24/Docsvault SB 6.0", BAAAAAAA</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccAuxPath />
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RecordManagement.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RecordManagement.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CustomFieldsControl, Version=5.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CustomFieldsControl\bin\Release\CustomFieldsControl.dll</HintPath>
+    </Reference>
+    <Reference Include="DBOperation, Version=5.5.0.0, Culture=neutral, PublicKeyToken=5f9107601ed19ff1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DBOperation\bin\DBOperation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Reports.v12.1.Designer, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v12.1.Extensions, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DVCommon">
+      <HintPath>..\DVCommon\bin\Release\DVCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="OpenVault, Version=5.7.927.0, Culture=neutral, PublicKeyToken=ae7c6aa3930799d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Openvault\bin\OpenVault.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsRecordMgt.vb" />
+    <Compile Include="CustomSkinTabControlViewInfo.vb" />
+    <Compile Include="CustomSkinViewInfoRegistrator.vb" />
+    <Compile Include="FrmMessageDisposeBatch.Designer.vb">
+      <DependentUpon>FrmMessageDisposeBatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageDisposeBatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNBatchWarinng.Designer.vb">
+      <DependentUpon>frmRTNBatchWarinng.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNBatchWarinng.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNCheckInRecord.VB">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNEmailTemplate.Designer.vb">
+      <DependentUpon>frmRTNEmailTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNEmailTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRTNHoldRecord.Designer.vb">
+      <DependentUpon>FrmRTNHoldRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRTNHoldRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNViewBatch.Designer.vb">
+      <DependentUpon>frmRTNViewBatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNViewBatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNBatchCriteria.Designer.vb">
+      <DependentUpon>frmRTNBatchCriteria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNBatchCriteria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNCreateBatch.Designer.vb">
+      <DependentUpon>frmRTNCreateBatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNCreateBatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNHoldType.Designer.vb">
+      <DependentUpon>frmRTNHoldType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNHoldType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNCheckoutRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNCOUser.Designer.vb">
+      <DependentUpon>frmRTNCOUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNCOUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRTNCustomFiledsValue.Designer.vb">
+      <DependentUpon>FrmRTNCustomFiledsValue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRTNCustomFiledsValue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNNewRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNPropertySelect.Designer.vb">
+      <DependentUpon>frmRTNPropertySelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNPropertySelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNRecordManagement.Designer.vb">
+      <DependentUpon>frmRTNRecordManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNRecordManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNRecordSeries.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNRecordSeriesSelect.Designer.vb">
+      <DependentUpon>frmRTNRecordSeriesSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNRecordSeriesSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRTNRecSerSelect-old.Designer.vb">
+      <DependentUpon>FrmRTNRecSerSelect-old.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRTNRecSerSelect-old.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNSearchRecords.Designer.vb">
+      <DependentUpon>frmRTNSearchRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNSearchRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRTNSecurity.Designer.vb">
+      <DependentUpon>FrmRTNSecurity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRTNSecurity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTNYearDefinition.Designer.vb">
+      <DependentUpon>frmRTNYearDefinition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRTNYearDefinition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messages.Designer.vb">
+      <DependentUpon>messages.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ModRecordMgmt.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RepRTNDisposedRecord.Designer.vb">
+      <DependentUpon>RepRTNDisposedRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RepRTNDisposedRecord.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RTNRecordSeries.Designer.vb">
+      <DependentUpon>RTNRecordSeries.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RTNRecordSeries.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraReport1.Designer.vb">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmMessageDisposeBatch.resx">
+      <DependentUpon>FrmMessageDisposeBatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNBatchWarinng.resx">
+      <DependentUpon>frmRTNBatchWarinng.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNCheckInRecord.resx">
+      <DependentUpon>frmRTNCheckInRecord.VB</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNCheckInRecord.tr-TR.resx">
+      <DependentUpon>frmRTNCheckInRecord.VB</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNEmailTemplate.resx">
+      <DependentUpon>frmRTNEmailTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRTNHoldRecord.resx">
+      <DependentUpon>FrmRTNHoldRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNViewBatch.resx">
+      <DependentUpon>frmRTNViewBatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNBatchCriteria.resx">
+      <DependentUpon>frmRTNBatchCriteria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNCreateBatch.resx">
+      <DependentUpon>frmRTNCreateBatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNHoldType.resx">
+      <DependentUpon>frmRTNHoldType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNCheckoutRecord.resx">
+      <DependentUpon>frmRTNCheckoutRecord.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNCheckoutRecord.tr-TR.resx">
+      <DependentUpon>frmRTNCheckoutRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNCOUser.resx">
+      <DependentUpon>frmRTNCOUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRTNCustomFiledsValue.resx">
+      <DependentUpon>FrmRTNCustomFiledsValue.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNNewRecord.resx">
+      <DependentUpon>frmRTNNewRecord.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNNewRecord.tr-TR.resx">
+      <DependentUpon>frmRTNNewRecord.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNPropertySelect.resx">
+      <DependentUpon>frmRTNPropertySelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNPropertySelect.tr-TR.resx">
+      <DependentUpon>frmRTNPropertySelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNRecordManagement.resx">
+      <DependentUpon>frmRTNRecordManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNRecordSeries.resx">
+      <DependentUpon>frmRTNRecordSeries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNRecordSeries.tr-TR.resx">
+      <DependentUpon>frmRTNRecordSeries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNRecordSeriesSelect.resx">
+      <DependentUpon>frmRTNRecordSeriesSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNRecordSeriesSelect.tr-TR.resx">
+      <DependentUpon>frmRTNRecordSeriesSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRTNRecSerSelect-old.resx">
+      <DependentUpon>FrmRTNRecSerSelect-old.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRTNRecSerSelect-old.tr-TR.resx">
+      <DependentUpon>FrmRTNRecSerSelect-old.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNSearchRecords.resx">
+      <DependentUpon>frmRTNSearchRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRTNSecurity.resx">
+      <DependentUpon>FrmRTNSecurity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRTNSecurity.tr-TR.resx">
+      <DependentUpon>FrmRTNSecurity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNYearDefinition.resx">
+      <DependentUpon>frmRTNYearDefinition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>messages.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messages.tr-TR.resx">
+      <DependentUpon>messages.resx</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepRTNDisposedRecord.resx">
+      <DependentUpon>RepRTNDisposedRecord.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTNRecordSeries.resx">
+      <DependentUpon>RTNRecordSeries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageDisposeBatch.tr-TR.resx">
+      <DependentUpon>FrmMessageDisposeBatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNBatchCriteria.tr-TR.resx">
+      <DependentUpon>frmRTNBatchCriteria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNBatchWarinng.tr-TR.resx">
+      <DependentUpon>frmRTNBatchWarinng.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNCOUser.tr-TR.resx">
+      <DependentUpon>frmRTNCOUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNCreateBatch.tr-TR.resx">
+      <DependentUpon>frmRTNCreateBatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRTNCustomFiledsValue.tr-TR.resx">
+      <DependentUpon>FrmRTNCustomFiledsValue.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNEmailTemplate.tr-TR.resx">
+      <DependentUpon>frmRTNEmailTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRTNHoldRecord.tr-TR.resx">
+      <DependentUpon>FrmRTNHoldRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNHoldType.tr-TR.resx">
+      <DependentUpon>frmRTNHoldType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNRecordManagement.tr-TR.resx">
+      <DependentUpon>frmRTNRecordManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNSearchRecords.tr-TR.resx">
+      <DependentUpon>frmRTNSearchRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNViewBatch.tr-TR.resx">
+      <DependentUpon>frmRTNViewBatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTNYearDefinition.tr-TR.resx">
+      <DependentUpon>frmRTNYearDefinition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepRTNDisposedRecord.tr-TR.resx">
+      <DependentUpon>RepRTNDisposedRecord.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.tr-TR.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Records-retention.png" />
+    <None Include="Resources\Retention-AppIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <PostBuildEvent>"%25programfiles%25\Microsoft SDKs\Windows\v7.0A\bin\signtool.exe" sign  /f  "E:\Docsvault SB 6.0\Code Signing Cert\EDA.pfx" /d "Docsvault Small Business" /du http://www.docsvault.com/  /t  "http://timestamp.comodoca.com/authenticode"  /p "03corptech04"  "$(ProjectDir)\obj\$(ConfigurationName)\*.dll"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

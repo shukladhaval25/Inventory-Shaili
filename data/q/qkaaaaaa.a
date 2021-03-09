@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{7B4BD4A9-9588-4768-A947-522DD4188F7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DVImport</RootNamespace>
+    <AssemblyName>DVImport</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>"%24/Docsvault SB 6.0", BAAAAAAA</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccAuxPath />
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DVImport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DVImport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DVImport.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DBOperation">
+      <HintPath>..\DBOperation\bin\DBOperation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1.Design, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1.Design, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DVCommon, Version=5.5.0.0, Culture=neutral, PublicKeyToken=3cbd6f054b2e1cc6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DVCommon\bin\Release\DVCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="DVSBIPC">
+      <HintPath>..\DVSBIPC\bin\Release\DVSBIPC.dll</HintPath>
+    </Reference>
+    <Reference Include="GdPicture.NET, Version=8.2.0.1, Culture=neutral, PublicKeyToken=b7f298a24d8f9345, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\GdPicture.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="GdPicture.NET.PDF, Version=1.0.0.7, Culture=neutral, PublicKeyToken=8585d00cf40c0f9f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\GdPicture.NET.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenDialog, Version=5.5.0.0, Culture=neutral, PublicKeyToken=d4c25560d0a202e5, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenDialog\bin\OpenDialog.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OpenVault, Version=5.5.726.0, Culture=neutral, PublicKeyToken=032f321270698ca4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Openvault\bin\OpenVault.dll</HintPath>
+    </Reference>
+    <Reference Include="ProfileProperty">
+      <HintPath>..\ProfileProperty\obj\Release\ProfileProperty.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCheckInCheckout.vb" />
+    <Compile Include="clsDVNamespaceWatcher.vb" />
+    <Compile Include="clsDVReceiveIPC.vb" />
+    <Compile Include="clsEntireNetwork.vb" />
+    <Compile Include="clsFile.vb" />
+    <Compile Include="clsGetIcon.vb" />
+    <Compile Include="clsVer_Audit.vb" />
+    <Compile Include="frmAddFileFolder.Designer.vb">
+      <DependentUpon>frmAddFileFolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddFileFolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckin_New.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckOutAddins.Designer.vb">
+      <DependentUpon>frmCheckOutAddins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckOutAddins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDownloadOCR.Designer.vb">
+      <DependentUpon>frmDownloadOCR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDownloadOCR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErrorFileList.Designer.vb">
+      <DependentUpon>frmErrorFileList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmErrorFileList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewFolder.Designer.vb">
+      <DependentUpon>frmNewFolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewFolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOverwrite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOWMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainModule.vb" />
+    <Compile Include="messages.Designer.vb">
+      <DependentUpon>messages.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="messages.tr-TR.Designer.vb">
+      <DependentUpon>messages.tr-TR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ModDataset.vb" />
+    <Compile Include="Resources.Designer.vb">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SHFileOperation.vb" />
+    <Compile Include="UploadFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAddFileFolder.resx">
+      <DependentUpon>frmAddFileFolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddFileFolder.tr-TR.resx">
+      <DependentUpon>frmAddFileFolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckin_New.resx">
+      <DependentUpon>frmCheckin_New.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckin_New.tr-TR.resx">
+      <DependentUpon>frmCheckin_New.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOut.resx">
+      <DependentUpon>frmCheckOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOut.tr-TR.resx">
+      <DependentUpon>frmCheckOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOutAddins.resx">
+      <DependentUpon>frmCheckOutAddins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOutAddins.tr-TR.resx">
+      <DependentUpon>frmCheckOutAddins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDownloadOCR.resx">
+      <DependentUpon>frmDownloadOCR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDownloadOCR.tr-TR.resx">
+      <DependentUpon>frmDownloadOCR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrorFileList.resx">
+      <DependentUpon>frmErrorFileList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrorFileList.tr-TR.resx">
+      <DependentUpon>frmErrorFileList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewFolder.resx">
+      <DependentUpon>frmNewFolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewFolder.tr-TR.resx">
+      <DependentUpon>frmNewFolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOverwrite.resx">
+      <DependentUpon>frmOverwrite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOverwrite.tr-TR.resx">
+      <DependentUpon>frmOverwrite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOWMessage.resx">
+      <DependentUpon>frmOWMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOWMessage.tr-TR.resx">
+      <DependentUpon>frmOWMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgress.resx">
+      <DependentUpon>frmProgress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgress.tr-TR.resx">
+      <DependentUpon>frmProgress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>messages.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messages.tr-TR.resx">
+      <DependentUpon>messages.resx</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>messages.tr-TR.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.tr-TR.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadFile.resx">
+      <DependentUpon>UploadFile.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DVImport.snk" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email_attachment.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <PostBuildEvent>"%25programfiles%25\Microsoft SDKs\Windows\v7.0A\bin\signtool.exe" sign  /f  "E:\Docsvault SB 6.0\Code Signing Cert\EDA.pfx" /d "Docsvault Small Business" /du http://www.docsvault.com/  /t  "http://timestamp.comodoca.com/authenticode"  /p "03corptech04"  "$(ProjectDir)\obj\$(ConfigurationName)\*.dll"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
