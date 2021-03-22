@@ -7,7 +7,7 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Inventory Shaili", "Invento
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS", "IMS\IMS.csproj", "{AC76BA5A-9109-4556-8A90-9B59A0FA97FF}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Inventory Shili Setup VS 2017", "Inventory Shili Setup VS 2017\Inventory Shili Setup VS 2017.vdproj", "{7880A1CD-487D-4A5C-BBA1-1F4C745C1187}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Inventory Shaili Setup V45", "Inventory Shaili Setup V45\Inventory Shaili Setup V45.vdproj", "{C8A48C2A-19BD-4555-BBF2-A9C944606DDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,22 +23,13 @@ Global
 		{AC76BA5A-9109-4556-8A90-9B59A0FA97FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC76BA5A-9109-4556-8A90-9B59A0FA97FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC76BA5A-9109-4556-8A90-9B59A0FA97FF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7880A1CD-487D-4A5C-BBA1-1F4C745C1187}.Debug|Any CPU.ActiveCfg = Debug
-		{7880A1CD-487D-4A5C-BBA1-1F4C745C1187}.Release|Any CPU.ActiveCfg = Release
+		{C8A48C2A-19BD-4555-BBF2-A9C944606DDC}.Debug|Any CPU.ActiveCfg = Debug
+		{C8A48C2A-19BD-4555-BBF2-A9C944606DDC}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D194C1F8-B594-4AA9-98CF-AFE8B739DAFF}
-	EndGlobalSection
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 1
-		SccProjectUniqueName0 = Inventory\u0020Shaili\u0020Setup\u00202016\\Inventory\u0020Shaili\u0020Setup\u00202016.vdproj
-		SccProjectName0 = \u0022$/Invetory\u0020Shaili/Inventory\u0020Shaili\u0022,\u0020CAAAAAAA
-		SccLocalPath0 = ..\\..
-		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
-		CanCheckoutShared = false
-		SccProjectFilePathRelativizedFromConnection0 = Application\u0020Softwares\\Invetory\u0020Shaili\u00202015\\Inventory\u0020Shaili\u0020Setup\u00202016\\
 	EndGlobalSection
 EndGlobal

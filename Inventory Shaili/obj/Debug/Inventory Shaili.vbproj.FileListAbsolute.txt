@@ -329,3 +329,4 @@ C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Debug\Microso
 C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\bin\Debug\Microsoft.VisualStudio.Designer.Interfaces.xml
 C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Debug\Inventory Shaili.vbproj.CopyComplete
 C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Debug\Inventory_Shaili.frmPackingVI.resources
+C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\obj\Debug\Inventory Shaili.vbprojAssemblyReference.cache
