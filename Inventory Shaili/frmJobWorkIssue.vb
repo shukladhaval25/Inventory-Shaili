@@ -661,7 +661,7 @@ Public Class frmJobWorkIssue
 
     Private Sub cmdOpeningStock_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdOpeningStock.Click
         Try
-            Dim myFrm As New frmFG_OpeningStock
+            Dim myFrm As New frmFG_OpeningStock1
             myFrm.ShowDialog()
             myFrm.Dispose()
         Catch ex As Exception

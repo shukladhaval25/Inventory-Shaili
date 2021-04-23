@@ -1321,7 +1321,7 @@ Public Class FrmMain
                 Case "FG_OP_Stk"
                     ModMain.strgridid = gvMain.GetFocusedRowCellValue("ID")
                     If ModMain.strgridid <> "" Then
-                        Dim frmobj As New frmFG_OpeningStock
+                        Dim frmobj As New frmFG_OpeningStock2
                         frmobj.strcheck = "Edit"
                         frmobj.ShowDialog()
                         tBTnFGOpStock_ItemClick(sender, p)
@@ -1480,7 +1480,7 @@ Public Class FrmMain
                     frmobj.ShowDialog()
                     tBTnRMOpStock_ItemClick(sender, p)
                 Case "FG_OP_Stk"
-                    Dim frmobj As New frmFG_OpeningStock
+                    Dim frmobj As New frmFG_OpeningStock2
                     frmobj.strcheck = "Add"
                     frmobj.ShowDialog()
                     tBTnFGOpStock_ItemClick(sender, p)

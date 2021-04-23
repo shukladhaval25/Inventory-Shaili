@@ -15,6 +15,16 @@
         Dim adp As New OleDb.OleDbDataAdapter(strSql, conn)
         adp.Fill(ds, "FGExpired")
 
+
+        strSql = "SELECT FG_Opening_Stock.FID,FGMaster.FGName, FG_Opening_Stock.FGVI_NO AS Batch_No, Format(FG_Opening_Stock.Mfg_Date,'mm/yyyy') AS MFG_Date, " _
+            & " format(DateAdd('m',FGMaster.ExpirationPeriod,FG_Opening_Stock.Mfg_Date),'mm/yyyy') AS Exp_Date, 0 AS QC_No,FGStock.Balance_Qty " _
+            & " FROM (FGMaster INNER JOIN FG_Opening_Stock ON FGMaster.FID = FG_Opening_Stock.FID) INNER JOIN FGStock ON FGMaster.FID = FGStock.FID " _
+            & " WHERE (((DateAdd('m',FGMaster.ExpirationPeriod,FG_Opening_Stock.Mfg_Date)) < Date()) " _
+            & " AND ((FGStock.Balance_Qty)>0) AND ((FGStock.CY)='" & strCY & "') AND ((FGStock.Type)='Opening'));"
+
+        adp.SelectCommand.CommandText = strSql
+        adp.Fill(ds, "FGExpired")
+
         myRpt.DataSource = ds
 
         myRpt.xrlblDateVal.Text = Now.Date

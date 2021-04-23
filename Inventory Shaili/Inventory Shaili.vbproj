@@ -183,6 +183,12 @@
     <Compile Include="Finish Goods\frmFG_OpeningStock.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmFG_OpeningStock.Designer.vb">
+      <DependentUpon>frmFG_OpeningStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFG_OpeningStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmFindSupplier.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -591,6 +597,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmExpiredProduct.resx">
       <DependentUpon>frmExpiredProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFG_OpeningStock.resx">
+      <DependentUpon>frmFG_OpeningStock.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFindSupplier.resx">
       <SubType>Designer</SubType>

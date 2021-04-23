@@ -1,14 +1,8 @@
-Public Class frmFG_OpeningStock
+Public Class frmFG_OpeningStock2
     Inherits DevExpress.XtraEditors.XtraForm
-    Dim strFID As String
-    Dim strUID As String
-    Public strcheck As String
-    Dim cmd As OleDb.OleDbCommand
-    Dim dr As OleDb.OleDbDataReader
-    Dim strFGVINO As String
-       
-#Region " Windows Form Designer generated code "
 
+
+#Region " Windows Form Designer generated code "
     Public Sub New()
         MyBase.New()
 
@@ -49,28 +43,37 @@ Public Class frmFG_OpeningStock
     Friend WithEvents lkupName As DevExpress.XtraEditors.LookUpEdit
     Friend WithEvents txtFGunit As DevExpress.XtraEditors.TextEdit
     Friend WithEvents txtID As System.Windows.Forms.TextBox
+    Friend WithEvents lblMfgDate As System.Windows.Forms.Label
+    Friend WithEvents dtpMfgDate As DevExpress.XtraEditors.DateEdit
+
+
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl
-        Me.txtID = New System.Windows.Forms.TextBox
-        Me.txtFGunit = New DevExpress.XtraEditors.TextEdit
-        Me.lkupName = New DevExpress.XtraEditors.LookUpEdit
-        Me.txtQty = New DevExpress.XtraEditors.TextEdit
-        Me.lblInQty = New System.Windows.Forms.Label
-        Me.txtFGVINO = New DevExpress.XtraEditors.TextEdit
-        Me.lblVINO = New System.Windows.Forms.Label
-        Me.lblDate = New System.Windows.Forms.Label
-        Me.dtpdate = New DevExpress.XtraEditors.DateEdit
-        Me.lblUnit = New System.Windows.Forms.Label
-        Me.lblProdName = New System.Windows.Forms.Label
-        Me.cmdcancel = New DevExpress.XtraEditors.SimpleButton
-        Me.cmdsave = New DevExpress.XtraEditors.SimpleButton
+        Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.txtFGunit = New DevExpress.XtraEditors.TextEdit()
+        Me.lkupName = New DevExpress.XtraEditors.LookUpEdit()
+        Me.txtQty = New DevExpress.XtraEditors.TextEdit()
+        Me.lblInQty = New System.Windows.Forms.Label()
+        Me.txtFGVINO = New DevExpress.XtraEditors.TextEdit()
+        Me.lblVINO = New System.Windows.Forms.Label()
+        Me.lblDate = New System.Windows.Forms.Label()
+        Me.dtpdate = New DevExpress.XtraEditors.DateEdit()
+        Me.lblUnit = New System.Windows.Forms.Label()
+        Me.lblProdName = New System.Windows.Forms.Label()
+        Me.lblMfgDate = New System.Windows.Forms.Label()
+        Me.dtpMfgDate = New DevExpress.XtraEditors.DateEdit()
+        Me.cmdcancel = New DevExpress.XtraEditors.SimpleButton()
+        Me.cmdsave = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl1.SuspendLayout()
         CType(Me.txtFGunit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lkupName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtQty.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtFGVINO.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtpdate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtpdate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtpMfgDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtpMfgDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupControl1
@@ -86,27 +89,26 @@ Public Class frmFG_OpeningStock
         Me.GroupControl1.Controls.Add(Me.dtpdate)
         Me.GroupControl1.Controls.Add(Me.lblUnit)
         Me.GroupControl1.Controls.Add(Me.lblProdName)
+        Me.GroupControl1.Controls.Add(Me.lblMfgDate)
+        Me.GroupControl1.Controls.Add(Me.dtpMfgDate)
         Me.GroupControl1.Location = New System.Drawing.Point(8, 8)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(360, 167)
+        Me.GroupControl1.Size = New System.Drawing.Size(360, 190)
         Me.GroupControl1.TabIndex = 0
         '
         'txtID
         '
-        Me.txtID.Location = New System.Drawing.Point(96, 16)
+        Me.txtID.Location = New System.Drawing.Point(96, 24)
         Me.txtID.Name = "txtID"
-        Me.txtID.Size = New System.Drawing.Size(32, 20)
+        Me.txtID.Size = New System.Drawing.Size(32, 21)
         Me.txtID.TabIndex = 25
         Me.txtID.Visible = False
         '
         'txtFGunit
         '
         Me.txtFGunit.EditValue = ""
-        Me.txtFGunit.Location = New System.Drawing.Point(136, 43)
+        Me.txtFGunit.Location = New System.Drawing.Point(136, 51)
         Me.txtFGunit.Name = "txtFGunit"
-        '
-        '
-        '
         Me.txtFGunit.Properties.MaxLength = 50
         Me.txtFGunit.Properties.ReadOnly = True
         Me.txtFGunit.Size = New System.Drawing.Size(216, 20)
@@ -115,11 +117,8 @@ Public Class frmFG_OpeningStock
         'lkupName
         '
         Me.lkupName.EditValue = ""
-        Me.lkupName.Location = New System.Drawing.Point(136, 16)
+        Me.lkupName.Location = New System.Drawing.Point(136, 24)
         Me.lkupName.Name = "lkupName"
-        '
-        '
-        '
         Me.lkupName.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.lkupName.Properties.NullText = ""
         Me.lkupName.Size = New System.Drawing.Size(216, 20)
@@ -128,18 +127,15 @@ Public Class frmFG_OpeningStock
         'txtQty
         '
         Me.txtQty.EditValue = ""
-        Me.txtQty.Location = New System.Drawing.Point(136, 70)
+        Me.txtQty.Location = New System.Drawing.Point(136, 78)
         Me.txtQty.Name = "txtQty"
-        '
-        '
-        '
         Me.txtQty.Properties.MaxLength = 50
         Me.txtQty.Size = New System.Drawing.Size(216, 20)
         Me.txtQty.TabIndex = 3
         '
         'lblInQty
         '
-        Me.lblInQty.Location = New System.Drawing.Point(16, 70)
+        Me.lblInQty.Location = New System.Drawing.Point(16, 78)
         Me.lblInQty.Name = "lblInQty"
         Me.lblInQty.Size = New System.Drawing.Size(104, 23)
         Me.lblInQty.TabIndex = 24
@@ -148,18 +144,15 @@ Public Class frmFG_OpeningStock
         'txtFGVINO
         '
         Me.txtFGVINO.EditValue = ""
-        Me.txtFGVINO.Location = New System.Drawing.Point(136, 98)
+        Me.txtFGVINO.Location = New System.Drawing.Point(136, 106)
         Me.txtFGVINO.Name = "txtFGVINO"
-        '
-        '
-        '
         Me.txtFGVINO.Properties.MaxLength = 50
         Me.txtFGVINO.Size = New System.Drawing.Size(216, 20)
         Me.txtFGVINO.TabIndex = 4
         '
         'lblVINO
         '
-        Me.lblVINO.Location = New System.Drawing.Point(16, 98)
+        Me.lblVINO.Location = New System.Drawing.Point(16, 106)
         Me.lblVINO.Name = "lblVINO"
         Me.lblVINO.Size = New System.Drawing.Size(112, 23)
         Me.lblVINO.TabIndex = 22
@@ -167,7 +160,7 @@ Public Class frmFG_OpeningStock
         '
         'lblDate
         '
-        Me.lblDate.Location = New System.Drawing.Point(16, 126)
+        Me.lblDate.Location = New System.Drawing.Point(16, 134)
         Me.lblDate.Name = "lblDate"
         Me.lblDate.Size = New System.Drawing.Size(56, 24)
         Me.lblDate.TabIndex = 21
@@ -176,18 +169,16 @@ Public Class frmFG_OpeningStock
         'dtpdate
         '
         Me.dtpdate.EditValue = New Date(2007, 1, 19, 0, 0, 0, 0)
-        Me.dtpdate.Location = New System.Drawing.Point(136, 126)
+        Me.dtpdate.Location = New System.Drawing.Point(136, 134)
         Me.dtpdate.Name = "dtpdate"
-        '
-        '
-        '
         Me.dtpdate.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.dtpdate.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.dtpdate.Size = New System.Drawing.Size(216, 20)
         Me.dtpdate.TabIndex = 5
         '
         'lblUnit
         '
-        Me.lblUnit.Location = New System.Drawing.Point(16, 42)
+        Me.lblUnit.Location = New System.Drawing.Point(16, 50)
         Me.lblUnit.Name = "lblUnit"
         Me.lblUnit.Size = New System.Drawing.Size(80, 23)
         Me.lblUnit.TabIndex = 2
@@ -195,16 +186,34 @@ Public Class frmFG_OpeningStock
         '
         'lblProdName
         '
-        Me.lblProdName.Location = New System.Drawing.Point(16, 16)
+        Me.lblProdName.Location = New System.Drawing.Point(16, 24)
         Me.lblProdName.Name = "lblProdName"
         Me.lblProdName.Size = New System.Drawing.Size(80, 23)
         Me.lblProdName.TabIndex = 1
         Me.lblProdName.Text = "Product Name"
         '
+        'lblMfgDate
+        '
+        Me.lblMfgDate.Location = New System.Drawing.Point(16, 163)
+        Me.lblMfgDate.Name = "lblMfgDate"
+        Me.lblMfgDate.Size = New System.Drawing.Size(56, 22)
+        Me.lblMfgDate.TabIndex = 22
+        Me.lblMfgDate.Text = "Mfg. Date "
+        '
+        'dtpMfgDate
+        '
+        Me.dtpMfgDate.EditValue = New Date(2021, 4, 21, 0, 0, 0, 0)
+        Me.dtpMfgDate.Location = New System.Drawing.Point(136, 160)
+        Me.dtpMfgDate.Name = "dtpMfgDate"
+        Me.dtpMfgDate.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.dtpMfgDate.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.dtpMfgDate.Size = New System.Drawing.Size(216, 20)
+        Me.dtpMfgDate.TabIndex = 6
+        '
         'cmdcancel
         '
         Me.cmdcancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.cmdcancel.Location = New System.Drawing.Point(288, 184)
+        Me.cmdcancel.Location = New System.Drawing.Point(288, 204)
         Me.cmdcancel.Name = "cmdcancel"
         Me.cmdcancel.Size = New System.Drawing.Size(72, 24)
         Me.cmdcancel.TabIndex = 7
@@ -212,23 +221,22 @@ Public Class frmFG_OpeningStock
         '
         'cmdsave
         '
-        Me.cmdsave.Location = New System.Drawing.Point(208, 184)
+        Me.cmdsave.Location = New System.Drawing.Point(210, 204)
         Me.cmdsave.Name = "cmdsave"
         Me.cmdsave.Size = New System.Drawing.Size(72, 24)
         Me.cmdsave.TabIndex = 6
         Me.cmdsave.Text = "&Save"
         '
-        'frmFG_OpeningStock
+        'frmFG_OpeningStock2
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 14)
-        Me.ClientSize = New System.Drawing.Size(378, 216)
+        Me.ClientSize = New System.Drawing.Size(378, 235)
         Me.Controls.Add(Me.cmdcancel)
         Me.Controls.Add(Me.cmdsave)
         Me.Controls.Add(Me.GroupControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "frmFG_OpeningStock"
+        Me.Name = "frmFG_OpeningStock2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Opening Stock Of Final Product"
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -238,14 +246,23 @@ Public Class frmFG_OpeningStock
         CType(Me.lkupName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtQty.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtFGVINO.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtpdate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtpdate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtpMfgDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtpMfgDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
 #End Region
 
-    
+    Dim strFID As String
+    Dim strUID As String
+    Public strcheck As String
+    Dim cmd As OleDb.OleDbCommand
+    Dim dr As OleDb.OleDbDataReader
+    Dim strFGVINO As String
+
     Private Sub frmFG_OpeningStock_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
             FillLookup("SELECT FGMaster.FGName, FGMaster.FID, UnitMaster.UnitName, UnitMaster.UnitID " _
@@ -319,7 +336,7 @@ Public Class frmFG_OpeningStock
                 intID = intID + 1
                 strFID = "FG00000090"
                 strUID = "UT0001"
-                cmd.CommandText = "insert into FG_Opening_Stock values (" & intID & ",'" & strFID & "','" & strUID & "','" & Replace(txtFGVINO.Text, "'", "''") & "'," & txtQty.Text & ",'" & dtpdate.Text & "','" & strCY.Trim & "')"
+                cmd.CommandText = "insert into FG_Opening_Stock values (" & intID & ",'" & strFID & "','" & strUID & "','" & Replace(txtFGVINO.Text, "'", "''") & "'," & txtQty.Text & ",'" & dtpdate.Text & "','" & strCY.Trim & "','" & dtpMfgDate.Text & "')"
                 cmd.ExecuteNonQuery()
 
                 cmd.CommandText = "Insert into FGStock values ('" & strFID & "','" & dtpdate.Text & "','" & Replace(txtFGVINO.Text, "'", "''") & "','Opening'," & txtQty.Text & ",0,0," & txtQty.Text & ",'" & strCY.Trim & "')"
@@ -330,7 +347,7 @@ Public Class frmFG_OpeningStock
                 cmd.Connection = conn
                 cmd.Transaction = conn.BeginTransaction
 
-                cmd.CommandText = "Update FG_Opening_Stock  set FGVI_NO = '" & Replace(txtFGVINO.Text.Trim, "'", "''") & "', Opening_Qty = " & txtQty.Text & ", Register_Date ='" & dtpdate.Text & "' where ID =" & txtID.Text & " and CY ='" & strCY.Trim & "'"
+                cmd.CommandText = "Update FG_Opening_Stock  set FGVI_NO = '" & Replace(txtFGVINO.Text.Trim, "'", "''") & "', Opening_Qty = " & txtQty.Text & ", Register_Date ='" & dtpdate.Text & "',Mfg_Date ='" & dtpMfgDate.Text & "' where ID =" & txtID.Text & " and CY ='" & strCY.Trim & "'"
                 cmd.ExecuteNonQuery()
 
                 cmd.CommandText = "Update FGstock set Batch_No='" & txtFGVINO.Text & "' where FID ='" & strFID & "' and Batch_No ='" & strFGVINO & "' and CY ='" & strCY.Trim & "'"
@@ -386,9 +403,10 @@ Public Class frmFG_OpeningStock
             cmd.CommandText = "SELECT Count(FG_Opening_Stock.FGVI_NO) AS CountOfFGVI_NO, FG_Opening_Stock.FID, FG_Opening_Stock.FGVI_NO" _
                 & " FROM FGMaster INNER JOIN FG_Opening_Stock ON FGMaster.FID = FG_Opening_Stock.FID " _
                 & " GROUP BY FG_Opening_Stock.FID, FG_Opening_Stock.FGVI_NO " _
-                & " HAVING (((FG_Opening_Stock.FID)='" & strFID & "') AND ((FG_Opening_Stock.FGVI_NO)= '" & txtFGVINO.Text.Trim & "'));"
+                & " HAVING (((FG_Opening_Stock.FID)='" & strFID & "') AND ((FG_Opening_Stock.FGVI_NO)= '" & txtFGVINO.Text.Trim & "')" _
+                & " And (FG_Opening_Stock.Mfg_Date ='" & dtpMfgDate.Text & "');"
             If cmd.ExecuteScalar > 0 Then
-                DevExpress.XtraEditors.XtraMessageBox.Show(Me, "Duplicate batch no for this product.", StrAppName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                DevExpress.XtraEditors.XtraMessageBox.Show(Me, "Duplicate batch no with same manufaturing date for this product.", StrAppName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
                 dtpdate.Select()
                 Return False
                 Exit Function
@@ -431,6 +449,13 @@ Public Class frmFG_OpeningStock
                 dtpdate.EditValue = ""
             Else
                 dtpdate.EditValue = Format(dr("Register_Date"), "dd/MM/yyyy")
+            End If
+
+            'Mfg_Date
+            If IsDBNull(dr("Mfg_Date").ToString) = True Then
+                dtpMfgDate.EditValue = ""
+            Else
+                dtpMfgDate.EditValue = Format(dr("Mfg_Date"), "dd/MM/yyyy")
             End If
 
             Dim strunitid As String

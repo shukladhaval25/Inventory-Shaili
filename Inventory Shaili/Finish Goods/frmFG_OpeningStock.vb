@@ -1,4 +1,4 @@
-Public Class frmFG_OpeningStock
+Public Class frmFG_OpeningStock1
     Inherits DevExpress.XtraEditors.XtraForm
     Dim strFID As String
     Dim strUID As String

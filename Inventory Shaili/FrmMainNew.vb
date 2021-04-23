@@ -1878,7 +1878,7 @@ Public Class FrmMainNew
                 Case "FG_OP_Stk"
                     ModMain.strgridid = gvMain.GetFocusedRowCellValue("ID")
                     If ModMain.strgridid <> "" Then
-                        Dim frmobj As New frmFG_OpeningStock
+                        Dim frmobj As New frmFG_OpeningStock2
                         frmobj.strcheck = "Edit"
                         frmobj.ShowDialog()
                         tBTnFGOpStock_ItemClick(sender, p)
@@ -2081,7 +2081,7 @@ Public Class FrmMainNew
                     frmobj.ShowDialog()
                     tBTnRMOpStock_ItemClick(sender, p)
                 Case "FG_OP_Stk"
-                    Dim frmobj As New frmFG_OpeningStock
+                    Dim frmobj As New frmFG_OpeningStock2
                     frmobj.strcheck = "Add"
                     frmobj.ShowDialog()
                     tBTnFGOpStock_ItemClick(sender, p)
@@ -4823,6 +4823,15 @@ PACKING VISUAL INSPECTION") Then
 
         Dim adp As New OleDb.OleDbDataAdapter(strSql, conn)
         adp.Fill(ds, "FGExpired")
+
+        strSql = "SELECT FG_Opening_Stock.FID,FGMaster.FGName, FG_Opening_Stock.FGVI_NO AS Batch_No, Format(FG_Opening_Stock.Mfg_Date,'mm/yyyy') AS MFG_Date, " _
+            & " format(DateAdd('m',FGMaster.ExpirationPeriod,FG_Opening_Stock.Mfg_Date),'mm/yyyy') AS Exp_Date, 0 AS QC_No,FGStock.Balance_Qty " _
+            & " FROM (FGMaster INNER JOIN FG_Opening_Stock ON FGMaster.FID = FG_Opening_Stock.FID) INNER JOIN FGStock ON FGMaster.FID = FGStock.FID " _
+            & " WHERE (((DateAdd('m',FGMaster.ExpirationPeriod,FG_Opening_Stock.Mfg_Date)) < Date()) " _
+            & " AND ((FGStock.Balance_Qty)>0) AND ((FGStock.CY)='" & strCY & "') AND ((FGStock.Type)='Opening'));"
+        adp.SelectCommand.CommandText = strSql
+        adp.Fill(ds, "FGExpired")
+
         If (ds.Tables("FGExpired").Rows.Count > 0) Then
             Dim expiredProduct As New frmExpiredProduct
             expiredProduct.grdExpired.DataSource = ds.Tables("FGExpired").DefaultView

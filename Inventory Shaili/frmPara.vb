@@ -2336,6 +2336,21 @@ Public Class frmPara
                 Next
                 ds.Tables("MIS").Rows.Clear()
 
+                'Issue for Semi Finish Good
+                strsql = "SELECT SEMI_Material_Issue_Master.MIS_NO, SEMI_Material_Issue_Master.MIS_DATE, SEMI_Material_Issue_Detail.RMVI_NO, SEMI_Material_Issue_Detail.Issued_Qty, RMStock.RID " _
+                    & " FROM RMStock INNER JOIN (SEMI_Material_Issue_Master INNER JOIN SEMI_Material_Issue_Detail ON SEMI_Material_Issue_Master.MIS_NO = SEMI_Material_Issue_Detail.MIS_NO) ON RMStock.RID = SEMI_Material_Issue_Detail.RID " _
+                    & " GROUP BY SEMI_Material_Issue_Master.MIS_NO, SEMI_Material_Issue_Master.MIS_DATE, SEMI_Material_Issue_Detail.RMVI_NO, SEMI_Material_Issue_Detail.Issued_Qty, RMStock.RID " _
+                    & " HAVING (((SEMI_Material_Issue_Master.MIS_DATE) Between #" & Format(dtpFrom.EditValue, "MM/dd/yyyy") & "# and #" & Format(dtpTo.EditValue, "MM/dd/yyyy") & "#) AND ((RMStock.RID)='" & ds.Tables("RMStock").Rows(i).Item("RID") & "'));"
+
+                adpt.SelectCommand.CommandText = strsql
+                adpt.Fill(ds, "MIS")
+                For j As Integer = 0 To ds.Tables("MIS").Rows.Count - 1
+                    cmd.CommandText = "Insert Into Temp_Reg (ID,Product,MISNo,Rec_Dt,Issue_Date,Outward_Batchno,Issue_Qty) values ('" _
+                        & ds.Tables("RMStock").Rows(i).Item("RID") & "','" & Replace(ds.Tables("RMStock").Rows(i).Item("RMItemName"), "'", "''") & "','" & ds.Tables("MIS").Rows(j).Item("MIS_NO") & "','" & ds.Tables("MIS").Rows(j).Item("MIS_DATE") & "','" & ds.Tables("MIS").Rows(j).Item("MIS_DATE") & "','" & ds.Tables("MIS").Rows(j).Item("RMVI_NO") & "'," & ds.Tables("MIS").Rows(j).Item("Issued_Qty") & ")"
+                    cmd.ExecuteNonQuery()
+                Next
+                ds.Tables("MIS").Rows.Clear()
+
                 'MIS_RETURN_REISSUE
                 strsql = "SELECT MIS_Return_Master.MIS_NO, MIS_Return_Master.Return_Date, MIS_Return_Detail.RMVI_NO, MIS_Return_Detail.Qty, MIS_Return_Detail.Type " _
                     & " FROM (MIS_Return_Master INNER JOIN MIS_Return_Detail ON MIS_Return_Master.ID = MIS_Return_Detail.ReturnID) INNER JOIN RMStock ON MIS_Return_Detail.RID = RMStock.RID " _
@@ -2355,6 +2370,28 @@ Public Class frmPara
                             & ds.Tables("RMStock").Rows(i).Item("RID") & "','" & Replace(ds.Tables("RMStock").Rows(i).Item("RMItemName"), "'", "''") & "','" & ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("MIS_NO") & "','" & ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("Return_Date") & "','" & ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("RMVI_NO") & "'," & ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("Qty") & ")"
                         cmd.ExecuteNonQuery()
                     End If                   
+                Next
+                ds.Tables("MIS_RETURN_REISSUE").Rows.Clear()
+
+                'SEMI_MIS_RETURN_REISSUE
+                strsql = "SELECT Semi_MIS_Return_Master.MIS_NO, Semi_MIS_Return_Master.Return_Date, Semi_MIS_Return_Detail.RMVI_NO, Semi_MIS_Return_Detail.Qty, Semi_MIS_Return_Detail.Type " _
+                    & " FROM (Semi_MIS_Return_Master INNER JOIN Semi_MIS_Return_Detail ON Semi_MIS_Return_Master.ID = Semi_MIS_Return_Detail.ReturnID) INNER JOIN RMStock ON Semi_MIS_Return_Detail.RID = RMStock.RID " _
+                    & " WHERE (((RMStock.RID)='" & ds.Tables("RMStock").Rows(i).Item("RID") & "')) " _
+                    & " GROUP BY Semi_MIS_Return_Master.MIS_NO, Semi_MIS_Return_Master.Return_Date, Semi_MIS_Return_Detail.RMVI_NO, Semi_MIS_Return_Detail.Qty, Semi_MIS_Return_Detail.Type " _
+                    & " HAVING (((Semi_MIS_Return_Master.Return_Date) Between #" & Format(dtpFrom.EditValue, "MM/dd/yyyy") & "# and #" & Format(dtpTo.EditValue, "MM/dd/yyyy") & "#))"
+
+                adpt.SelectCommand.CommandText = strsql
+                adpt.Fill(ds, "MIS_RETURN_REISSUE")
+                For j As Integer = 0 To ds.Tables("MIS_RETURN_REISSUE").Rows.Count - 1
+                    If (ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("Type").ToString() = "Return") Then
+                        cmd.CommandText = "Insert Into Temp_Reg (ID,Product,Rec_Dt,Inward_BatchNo,Qty_Rec) values ('" _
+                           & ds.Tables("RMStock").Rows(i).Item("RID") & "','" & Replace(ds.Tables("RMStock").Rows(i).Item("RMItemName"), "'", "''") & "','" & ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("Return_Date") & "','" & ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("RMVI_No") & "'," & ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("Qty") & ")"
+                        cmd.ExecuteNonQuery()
+                    Else
+                        cmd.CommandText = "Insert Into Temp_Reg (ID,Product,MISNo,Issue_Date,Outward_Batchno,Issue_Qty) values ('" _
+                            & ds.Tables("RMStock").Rows(i).Item("RID") & "','" & Replace(ds.Tables("RMStock").Rows(i).Item("RMItemName"), "'", "''") & "','" & ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("MIS_NO") & "','" & ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("Return_Date") & "','" & ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("RMVI_NO") & "'," & ds.Tables("MIS_RETURN_REISSUE").Rows(j).Item("Qty") & ")"
+                        cmd.ExecuteNonQuery()
+                    End If
                 Next
                 ds.Tables("MIS_RETURN_REISSUE").Rows.Clear()
             Next
@@ -3204,6 +3241,17 @@ Public Class frmPara
                 ds.Tables("Challan").Columns.Add("Exp_Date")
 
                 For i As Integer = 0 To ds.Tables("Challan").Rows.Count - 1
+
+                    strSql = "SELECT FG_Opening_Stock.Mfg_Date AS MFG_Date,
+                             DateAdd('m',[FGMaster].[ExpirationPeriod],[FG_Opening_Stock].[Mfg_Date]) AS Exp_Date
+                             FROM (FGMaster INNER JOIN FG_Opening_Stock ON FGMaster.FID = FG_Opening_Stock.FID) 
+                             INNER JOIN FGStock ON FGMaster.FID = FGStock.FID
+                             WHERE (((FGStock.CY)='" & strCY & "') AND ((FGMaster.FGName)='" & ds.Tables("Challan").Rows(i).Item("FGName") & "') AND 
+                            ((FGStock.Batch_NO)='" & ds.Tables("Challan").Rows(i).Item("BatchID") & "') );
+"
+                    adp.SelectCommand.CommandText = strSql
+                    adp.Fill(ds, "Temp_FG_QC_Det")
+
                     strSql = "SELECT FinishGoods_QCDetail.MFG_Date, FinishGoods_QCDetail.Exp_Date " _
                         & " FROM FGMaster INNER JOIN FinishGoods_QCDetail ON FGMaster.FID = FinishGoods_QCDetail.FID " _
                         & " WHERE (((FGMaster.FGName)='" & ds.Tables("Challan").Rows(i).Item("FGName") & "') AND ((FinishGoods_QCDetail.Batch_NO)='" & ds.Tables("Challan").Rows(i).Item("BatchID") & "'));"

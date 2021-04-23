@@ -22,5 +22,21 @@ Inventory Shaili
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:Inventory_Shaili.frmFG_OpeningStock_design">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Inventory_Shaili.frmFG_OpeningStock_design.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Inventory_Shaili.frmFG_OpeningStock_design.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
 </members>
 </doc>

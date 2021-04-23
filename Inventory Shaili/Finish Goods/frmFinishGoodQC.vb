@@ -84,10 +84,6 @@ Public Class frmFinishGoodQC
         Me.gvqc = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.gdqc = New DevExpress.XtraGrid.GridControl()
         Me.grpqc = New DevExpress.XtraEditors.GroupControl()
-        Me.dtPackingVI = New DevExpress.XtraEditors.DateEdit()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.lblPackVINo = New System.Windows.Forms.Label()
-        Me.txtPackingVINo = New DevExpress.XtraEditors.TextEdit()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtSrNo = New DevExpress.XtraEditors.TextEdit()
         Me.dtST_Check = New DevExpress.XtraEditors.DateEdit()
@@ -98,8 +94,13 @@ Public Class frmFinishGoodQC
         Me.cmdsave = New DevExpress.XtraEditors.SimpleButton()
         Me.cmdclose = New DevExpress.XtraEditors.SimpleButton()
         Me.pnlQCDetail = New DevExpress.XtraEditors.PanelControl()
+        Me.lkupPkgVINo = New DevExpress.XtraEditors.LookUpEdit()
+        Me.dtPackingVI = New DevExpress.XtraEditors.DateEdit()
         Me.txtRejectionCompID = New DevExpress.XtraEditors.TextEdit()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblPackVINo = New System.Windows.Forms.Label()
         Me.lblrejectionCompID = New System.Windows.Forms.Label()
+        Me.txtPackingVINo = New DevExpress.XtraEditors.TextEdit()
         Me.dtExpDate = New DevExpress.XtraEditors.DateEdit()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.dtMfgDate = New DevExpress.XtraEditors.DateEdit()
@@ -125,14 +126,10 @@ Public Class frmFinishGoodQC
         Me.lblLotno = New System.Windows.Forms.Label()
         Me.lblVI = New System.Windows.Forms.Label()
         Me.txtVI_No = New DevExpress.XtraEditors.TextEdit()
-        Me.lkupPkgVINo = New DevExpress.XtraEditors.LookUpEdit()
         CType(Me.gvqc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gdqc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.grpqc, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpqc.SuspendLayout()
-        CType(Me.dtPackingVI.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dtPackingVI.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtPackingVINo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtSrNo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtST_Check.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtST_Check.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -141,7 +138,11 @@ Public Class frmFinishGoodQC
         CType(Me.dtinspection.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pnlQCDetail, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlQCDetail.SuspendLayout()
+        CType(Me.lkupPkgVINo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtPackingVI.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtPackingVI.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtRejectionCompID.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtPackingVINo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtExpDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtExpDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtMfgDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -155,7 +156,6 @@ Public Class frmFinishGoodQC
         CType(Me.txtqcno.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtrejqty.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtVI_No.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.lkupPkgVINo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'gvqc
@@ -197,49 +197,6 @@ Public Class frmFinishGoodQC
         Me.grpqc.Name = "grpqc"
         Me.grpqc.Size = New System.Drawing.Size(1115, 512)
         Me.grpqc.TabIndex = 0
-        '
-        'dtPackingVI
-        '
-        Me.dtPackingVI.EditValue = Nothing
-        Me.dtPackingVI.Enabled = False
-        Me.dtPackingVI.Location = New System.Drawing.Point(568, 107)
-        Me.dtPackingVI.Name = "dtPackingVI"
-        Me.dtPackingVI.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.dtPackingVI.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.dtPackingVI.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Custom
-        Me.dtPackingVI.Properties.Mask.EditMask = "dd/MM/yyyy"
-        Me.dtPackingVI.Size = New System.Drawing.Size(128, 20)
-        Me.dtPackingVI.TabIndex = 38
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(415, 107)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(97, 16)
-        Me.Label6.TabIndex = 39
-        Me.Label6.Text = "Packing VI Date"
-        '
-        'lblPackVINo
-        '
-        Me.lblPackVINo.AutoSize = True
-        Me.lblPackVINo.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPackVINo.Location = New System.Drawing.Point(182, 111)
-        Me.lblPackVINo.Name = "lblPackVINo"
-        Me.lblPackVINo.Size = New System.Drawing.Size(95, 16)
-        Me.lblPackVINo.TabIndex = 36
-        Me.lblPackVINo.Text = "Packing VI No.:"
-        '
-        'txtPackingVINo
-        '
-        Me.txtPackingVINo.Location = New System.Drawing.Point(713, 104)
-        Me.txtPackingVINo.Name = "txtPackingVINo"
-        Me.txtPackingVINo.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPackingVINo.Properties.Appearance.Options.UseFont = True
-        Me.txtPackingVINo.Size = New System.Drawing.Size(112, 22)
-        Me.txtPackingVINo.TabIndex = 37
-        Me.txtPackingVINo.Visible = False
         '
         'Label4
         '
@@ -340,7 +297,6 @@ Public Class frmFinishGoodQC
         Me.pnlQCDetail.Controls.Add(Me.Label6)
         Me.pnlQCDetail.Controls.Add(Me.lblPackVINo)
         Me.pnlQCDetail.Controls.Add(Me.lblrejectionCompID)
-        Me.pnlQCDetail.Controls.Add(Me.txtPackingVINo)
         Me.pnlQCDetail.Controls.Add(Me.dtExpDate)
         Me.pnlQCDetail.Controls.Add(Me.Label5)
         Me.pnlQCDetail.Controls.Add(Me.dtMfgDate)
@@ -365,10 +321,34 @@ Public Class frmFinishGoodQC
         Me.pnlQCDetail.Controls.Add(Me.lblRaw)
         Me.pnlQCDetail.Controls.Add(Me.txtrejqty)
         Me.pnlQCDetail.Controls.Add(Me.lblLotno)
+        Me.pnlQCDetail.Controls.Add(Me.txtPackingVINo)
         Me.pnlQCDetail.Location = New System.Drawing.Point(8, 92)
         Me.pnlQCDetail.Name = "pnlQCDetail"
         Me.pnlQCDetail.Size = New System.Drawing.Size(1102, 380)
         Me.pnlQCDetail.TabIndex = 3
+        '
+        'lkupPkgVINo
+        '
+        Me.lkupPkgVINo.EditValue = ""
+        Me.lkupPkgVINo.Location = New System.Drawing.Point(288, 106)
+        Me.lkupPkgVINo.Name = "lkupPkgVINo"
+        Me.lkupPkgVINo.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.lkupPkgVINo.Properties.NullText = ""
+        Me.lkupPkgVINo.Size = New System.Drawing.Size(112, 20)
+        Me.lkupPkgVINo.TabIndex = 55
+        '
+        'dtPackingVI
+        '
+        Me.dtPackingVI.EditValue = Nothing
+        Me.dtPackingVI.Enabled = False
+        Me.dtPackingVI.Location = New System.Drawing.Point(568, 105)
+        Me.dtPackingVI.Name = "dtPackingVI"
+        Me.dtPackingVI.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.dtPackingVI.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
+        Me.dtPackingVI.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Custom
+        Me.dtPackingVI.Properties.Mask.EditMask = "dd/MM/yyyy"
+        Me.dtPackingVI.Size = New System.Drawing.Size(128, 20)
+        Me.dtPackingVI.TabIndex = 38
         '
         'txtRejectionCompID
         '
@@ -379,6 +359,26 @@ Public Class frmFinishGoodQC
         Me.txtRejectionCompID.Size = New System.Drawing.Size(58, 22)
         Me.txtRejectionCompID.TabIndex = 53
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(415, 107)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(97, 16)
+        Me.Label6.TabIndex = 39
+        Me.Label6.Text = "Packing VI Date"
+        '
+        'lblPackVINo
+        '
+        Me.lblPackVINo.AutoSize = True
+        Me.lblPackVINo.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPackVINo.Location = New System.Drawing.Point(182, 111)
+        Me.lblPackVINo.Name = "lblPackVINo"
+        Me.lblPackVINo.Size = New System.Drawing.Size(95, 16)
+        Me.lblPackVINo.TabIndex = 36
+        Me.lblPackVINo.Text = "Packing VI No.:"
+        '
         'lblrejectionCompID
         '
         Me.lblrejectionCompID.AutoSize = True
@@ -388,6 +388,17 @@ Public Class frmFinishGoodQC
         Me.lblrejectionCompID.Size = New System.Drawing.Size(151, 16)
         Me.lblrejectionCompID.TabIndex = 54
         Me.lblrejectionCompID.Text = "Rejection Component ID:"
+        '
+        'txtPackingVINo
+        '
+        Me.txtPackingVINo.Location = New System.Drawing.Point(288, 104)
+        Me.txtPackingVINo.Name = "txtPackingVINo"
+        Me.txtPackingVINo.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPackingVINo.Properties.Appearance.Options.UseFont = True
+        Me.txtPackingVINo.Properties.ReadOnly = True
+        Me.txtPackingVINo.Size = New System.Drawing.Size(112, 22)
+        Me.txtPackingVINo.TabIndex = 37
+        Me.txtPackingVINo.Visible = False
         '
         'dtExpDate
         '
@@ -641,16 +652,6 @@ Public Class frmFinishGoodQC
         Me.txtVI_No.Size = New System.Drawing.Size(152, 22)
         Me.txtVI_No.TabIndex = 1
         '
-        'lkupPkgVINo
-        '
-        Me.lkupPkgVINo.EditValue = ""
-        Me.lkupPkgVINo.Location = New System.Drawing.Point(288, 106)
-        Me.lkupPkgVINo.Name = "lkupPkgVINo"
-        Me.lkupPkgVINo.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.lkupPkgVINo.Properties.NullText = ""
-        Me.lkupPkgVINo.Size = New System.Drawing.Size(112, 20)
-        Me.lkupPkgVINo.TabIndex = 55
-        '
         'frmFinishGoodQC
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 14)
@@ -667,9 +668,6 @@ Public Class frmFinishGoodQC
         CType(Me.grpqc, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpqc.ResumeLayout(False)
         Me.grpqc.PerformLayout()
-        CType(Me.dtPackingVI.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dtPackingVI.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtPackingVINo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtSrNo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtST_Check.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtST_Check.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -679,7 +677,11 @@ Public Class frmFinishGoodQC
         CType(Me.pnlQCDetail, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlQCDetail.ResumeLayout(False)
         Me.pnlQCDetail.PerformLayout()
+        CType(Me.lkupPkgVINo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtPackingVI.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtPackingVI.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtRejectionCompID.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtPackingVINo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtExpDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtExpDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtMfgDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -693,7 +695,6 @@ Public Class frmFinishGoodQC
         CType(Me.txtqcno.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtrejqty.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtVI_No.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.lkupPkgVINo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -746,6 +747,8 @@ Public Class frmFinishGoodQC
             dr = cmd.ExecuteReader
             dr.Read()
             bind_data()
+            lkupPkgVINo.Visible = False
+            txtPackingVINo.Visible = True
             dr.Close()
             cmd.Dispose()
             'chkSCheck.Enabled = False
@@ -789,8 +792,10 @@ Public Class frmFinishGoodQC
             End If
 
             If IsDBNull(dr("PKG_VI_NO")) = True Then
+                lkupPkgVINo.Text = String.Empty
                 txtPackingVINo.Text = String.Empty
             Else
+                lkupPkgVINo.Text = dr("PKG_VI_NO")
                 txtPackingVINo.Text = dr("PKG_VI_NO")
             End If
 
@@ -867,8 +872,10 @@ Public Class frmFinishGoodQC
         Dim sql As String
         sql = "SELECT PackingVI_Master.Packing_VI_No, PackingVI_Master.PKG_VI_Date
             FROM PackingVI_Master INNER JOIN PackingVI_Detail ON PackingVI_Master.Packing_VI_No = PackingVI_Detail.PACKING_VI_NO
-            WHERE (((PackingVI_Detail.FID)='" + lkupFGName.Tag + "') AND ((PackingVI_Master.CY)='" + strCY + "'))
+            WHERE (((PackingVI_Detail.FID)='" + lkupFGName.Tag + "') AND ((PackingVI_Master.CY)='" + strCY + "')) and 
+            ((PackingVI_Master.Packing_VI_No) Not In (select pkg_vi_no from FinishGoods_QCMaster ))
             GROUP BY PackingVI_Master.Packing_VI_No, PackingVI_Master.PKG_VI_Date"
+
         FillLookupWithMultipleValues(sql, "PackingVI_Master", "Packing VI No", "PKG_VI_Date", lkupPkgVINo)
     End Sub
 
@@ -963,7 +970,7 @@ Public Class frmFinishGoodQC
                 If (dtST_Check.Text <> "") Then
                     inspectionDt = dtST_Check.Text
                 End If
-                cmd.CommandText = "insert into FinishGoods_QCMaster values ('" & txtSrNo.Text.Trim & "','" & Replace(txtVI_No.Text, "''", "'") & "','" & dtinspection.Text & "'," & chkSCheck.Checked & ",'" & inspectionDt.Date & "','" & strCY.Trim & "','" & Replace(txtPackingVINo.Text, "''", "'") & "','" & dtPackingVI.Text & "')"
+                cmd.CommandText = "insert into FinishGoods_QCMaster values ('" & txtSrNo.Text.Trim & "','" & Replace(txtVI_No.Text, "''", "'") & "','" & dtinspection.Text & "'," & chkSCheck.Checked & ",'" & inspectionDt.Date & "','" & strCY.Trim & "','" & Replace(lkupPkgVINo.Text, "''", "'") & "','" & dtPackingVI.Text & "')"
                 cmd.Transaction = conn.BeginTransaction
                 cmd.ExecuteNonQuery()
 
@@ -1234,6 +1241,9 @@ Public Class frmFinishGoodQC
 
     Private Sub lkupPkgVINo_Leave(sender As Object, e As EventArgs) Handles lkupPkgVINo.Leave
         Dim row As DataRowView = lkupPkgVINo.Properties.GetDataSourceRowByDisplayValue(lkupPkgVINo.Text)
+        If row Is Nothing Then
+            Return
+        End If
         lkupPkgVINo.Tag = row(0).ToString
         dtPackingVI.Text = row(1).ToString
     End Sub
