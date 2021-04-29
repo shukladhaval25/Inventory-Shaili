@@ -334,8 +334,7 @@ Public Class frmFG_OpeningStock2
                 cmd.CommandText = "Select max(ID) from FG_Opening_Stock"
                 intID = IIf(IsDBNull(cmd.ExecuteScalar), 0, cmd.ExecuteScalar)
                 intID = intID + 1
-                strFID = "FG00000090"
-                strUID = "UT0001"
+
                 cmd.CommandText = "insert into FG_Opening_Stock values (" & intID & ",'" & strFID & "','" & strUID & "','" & Replace(txtFGVINO.Text, "'", "''") & "'," & txtQty.Text & ",'" & dtpdate.Text & "','" & strCY.Trim & "','" & dtpMfgDate.Text & "')"
                 cmd.ExecuteNonQuery()
 
@@ -347,7 +346,7 @@ Public Class frmFG_OpeningStock2
                 cmd.Connection = conn
                 cmd.Transaction = conn.BeginTransaction
 
-                cmd.CommandText = "Update FG_Opening_Stock  set FGVI_NO = '" & Replace(txtFGVINO.Text.Trim, "'", "''") & "', Opening_Qty = " & txtQty.Text & ", Register_Date ='" & dtpdate.Text & "',Mfg_Date ='" & dtpMfgDate.Text & "' where ID =" & txtID.Text & " and CY ='" & strCY.Trim & "'"
+                cmd.CommandText = "Update FG_Opening_Stock  set FGVI_NO = '" & Replace(txtFGVINO.Text.Trim, "'", "''") & "', Opening_Qty = " & txtQty.Text & ", Register_Date ='" & dtpdate.Text & "',Mfg_Date ='" & dtpMfgDate.Text & "' where ID =" & txtID.Text
                 cmd.ExecuteNonQuery()
 
                 cmd.CommandText = "Update FGstock set Batch_No='" & txtFGVINO.Text & "' where FID ='" & strFID & "' and Batch_No ='" & strFGVINO & "' and CY ='" & strCY.Trim & "'"
@@ -402,9 +401,9 @@ Public Class frmFG_OpeningStock2
             cmd.Connection = conn
             cmd.CommandText = "SELECT Count(FG_Opening_Stock.FGVI_NO) AS CountOfFGVI_NO, FG_Opening_Stock.FID, FG_Opening_Stock.FGVI_NO" _
                 & " FROM FGMaster INNER JOIN FG_Opening_Stock ON FGMaster.FID = FG_Opening_Stock.FID " _
-                & " GROUP BY FG_Opening_Stock.FID, FG_Opening_Stock.FGVI_NO " _
-                & " HAVING (((FG_Opening_Stock.FID)='" & strFID & "') AND ((FG_Opening_Stock.FGVI_NO)= '" & txtFGVINO.Text.Trim & "')" _
-                & " And (FG_Opening_Stock.Mfg_Date ='" & dtpMfgDate.Text & "');"
+                & " GROUP BY FG_Opening_Stock.FID, FG_Opening_Stock.FGVI_NO,FG_Opening_Stock.Mfg_Date " _
+                & " HAVING ((FG_Opening_Stock.FID)='" & strFID & "') AND ((FG_Opening_Stock.FGVI_NO)= '" & txtFGVINO.Text.Trim & "')" _
+                & " And (FG_Opening_Stock.Mfg_Date =#" & dtpMfgDate.Text & "#);"
             If cmd.ExecuteScalar > 0 Then
                 DevExpress.XtraEditors.XtraMessageBox.Show(Me, "Duplicate batch no with same manufaturing date for this product.", StrAppName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
                 dtpdate.Select()
@@ -452,7 +451,7 @@ Public Class frmFG_OpeningStock2
             End If
 
             'Mfg_Date
-            If IsDBNull(dr("Mfg_Date").ToString) = True Then
+            If String.IsNullOrEmpty(dr("Mfg_Date").ToString) = True Then
                 dtpMfgDate.EditValue = ""
             Else
                 dtpMfgDate.EditValue = Format(dr("Mfg_Date"), "dd/MM/yyyy")
