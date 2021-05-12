@@ -736,3 +736,13 @@ Details :System.Data.OleDb.OleDbException (0x80040E14): Extra ) in query express
    at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
    at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
    at Inventory_Shaili.frmPara.ShowChallan(String strChallanID)
+*************************************************************************
+Date :5/12/2021 11:03:15 AM
+Machine Name :DESKTOP-FT786DU
+Product Version :1.0.1.2
+Method :frmPara.ShowChallan
+User :
+Error Message :Argument 'Expression' is not a valid value.
+Details :System.ArgumentException: Argument 'Expression' is not a valid value.
+   at Microsoft.VisualBasic.Strings.Format(Object Expression, String Style)
+   at Inventory_Shaili.frmPara.ShowChallan(String strChallanID) in C:\Application Softwares\Invetory Shaili 2015\Inventory Shaili\frmPara.vb:line 3270

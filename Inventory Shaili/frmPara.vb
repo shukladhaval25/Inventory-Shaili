@@ -3243,10 +3243,10 @@ Public Class frmPara
                 For i As Integer = 0 To ds.Tables("Challan").Rows.Count - 1
 
                     strSql = "SELECT FG_Opening_Stock.Mfg_Date AS MFG_Date,
-                             DateAdd('m',[FGMaster].[ExpirationPeriod],[FG_Opening_Stock].[Mfg_Date]) AS Exp_Date
+                             IIf([FGMaster]![ExpirationPeriod]=0,Null,DateAdd('m',[FGMaster]![ExpirationPeriod],[FG_Opening_Stock]![Mfg_Date])) AS  Exp_Date 
                              FROM (FGMaster INNER JOIN FG_Opening_Stock ON FGMaster.FID = FG_Opening_Stock.FID) 
                              INNER JOIN FGStock ON FGMaster.FID = FGStock.FID
-                             WHERE (((FGStock.CY)='" & strCY & "') AND ((FGMaster.FGName)='" & ds.Tables("Challan").Rows(i).Item("FGName") & "') AND 
+                             WHERE (((FGMaster.FGName)='" & ds.Tables("Challan").Rows(i).Item("FGName") & "') AND 
                             ((FGStock.Batch_NO)='" & ds.Tables("Challan").Rows(i).Item("BatchID") & "') );
 "
                     adp.SelectCommand.CommandText = strSql
@@ -3264,7 +3264,8 @@ Public Class frmPara
                             ds.Tables("Challan").Rows(i).Item("Mfg_Date") = Format(ds.Tables("Temp_FG_QC_Det").Rows(0).Item("MFG_Date"), "MM/yyyy")
                         End If
 
-                        If (ds.Tables("Temp_FG_QC_Det").Rows(0).Item("Exp_Date").ToString() = "30/12/1899 00:00:00") Then
+                        If (ds.Tables("Temp_FG_QC_Det").Rows(0).Item("Exp_Date").ToString() = "30/12/1899 00:00:00") Or
+                            String.IsNullOrEmpty(ds.Tables("Temp_FG_QC_Det").Rows(0).Item("Exp_Date").ToString()) Then
                             ds.Tables("Challan").Rows(i).Item("Exp_Date") = ""
                         Else
                             ds.Tables("Challan").Rows(i).Item("Exp_Date") = Format(ds.Tables("Temp_FG_QC_Det").Rows(0).Item("Exp_Date"), "MM/yyyy")
